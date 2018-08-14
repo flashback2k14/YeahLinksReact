@@ -1,0 +1,57 @@
+.card {
+  background: white;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.list-main {
+  list-style-type: none;
+  line-height: 1.5;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-size: 1.1em;
+}
+
+.list-main_item {
+  background: black;
+  color: white;
+  line-height: 2;
+  padding-left: 8px;
+  font-weight: 900;
+}
+
+.list-child {
+  list-style-type: square;
+  line-height: 1.5;
+  font-size: 1.1em;
+}
+
+.list-child_item {
+  line-height: 1.5;
+  padding-top: 4px;
+  padding-left: 8px;
+  padding-bottom: 4px;
+  font-weight: 400;
+}
+
+.link {
+  text-decoration: none;
+  outline: none;
+  color: #616161;
+}
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+  color: #212121;
+}
+
+.link:visited {
+  color: #616161;
+}
+.link:visited:hover,
+.link:visited:focus {
+  text-decoration: underline;
+  color: #212121;
+}

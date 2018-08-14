@@ -1,0 +1,23 @@
+{
+  "categories": [
+    { "id": 1, "name": "GRID LAYOUT" },
+    { "id": 2, "name": "FLEXBOX LAYOUT" }
+  ],
+  "links": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "link": "http://www.griddy.io/"
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "link": "https://bitsofco.de/holy-grail-layout-css-grid/"
+    },
+    {
+      "id": 3,
+      "categoryId": 2,
+      "link": "http://flexbox.help/"
+    }
+  ]
+}
