@@ -9,7 +9,7 @@ interface IDataCompState {
 
 class DataComp extends React.Component<any, IDataCompState> {
   private _getLinkList = (categoryId: number) => {
-    const subsetList: IData[] = this.state.data.links.filter(
+    const subsetList: ILink[] = this.state.data.links.filter(
       (link: ILink) => link.categoryId === categoryId
     );
     return (
@@ -31,7 +31,7 @@ class DataComp extends React.Component<any, IDataCompState> {
     super(props);
     this.state = {
       loading: true,
-      data: null
+      data: {} as IData
     };
   }
 
