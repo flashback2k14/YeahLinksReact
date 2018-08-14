@@ -15,7 +15,7 @@ export interface IData {
 }
 
 export const fromJson = async (source: string): Promise<IData> => {
-  const response = await window.fetch(source);
+  const response = await window.fetch("./data/data.json");
   const responseData: IData = await response.json();
   return responseData;
 };

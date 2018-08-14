@@ -19,7 +19,12 @@
     {
       "id": 5,
       "name": "REACT TYPESCRIPT"
+    },
+    {
+      "id": 6,
+      "name": "REACT REDUX TYPESCRIPT"
     }
+
   ],
   "links": [
     {
@@ -51,6 +56,21 @@
       "id": 6,
       "categoryId": 4,
       "link": "https://egghead.io/courses/the-beginner-s-guide-to-react"
+    },
+    {
+      "id": 7,
+      "categoryId": 3,
+      "link": "https://css-tricks.com/considerations-styling-modal/"
+    },
+    {
+      "id": 8,
+      "categoryId": 3,
+      "link": "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_bottom"
+    },
+    {
+      "id": 9,
+      "categoryId": 6,
+      "link": "https://medium.com/@nem121/todo-app-with-typescript-redux-e6a4c2f02079"
     }
   ]
 }

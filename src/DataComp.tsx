@@ -36,13 +36,15 @@ class DataComp extends React.Component<any, IDataCompState> {
   }
 
   async componentDidMount() {
-    const result: IData = await fromJson("./data/data.json");
-    this.setState(prevState => {
-      return {
-        loading: !prevState.loading,
+    try {
+      const result: IData = await fromJson("./data/data.json?" + Date.now);
+      this.setState({
+        loading: false,
         data: result
-      };
-    });
+      });
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   render() {
