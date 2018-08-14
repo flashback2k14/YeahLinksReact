@@ -30,9 +30,7 @@
 
 .list-child_item {
   line-height: 1.5;
-  padding-top: 4px;
-  padding-left: 8px;
-  padding-bottom: 4px;
+  padding: 4px 8px;
   font-weight: 400;
 }
 
@@ -40,6 +38,7 @@
   text-decoration: none;
   outline: none;
   color: #616161;
+  word-wrap: break-word;
 }
 .link:hover,
 .link:focus {

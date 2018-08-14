@@ -1,8 +1,25 @@
 {
   "categories": [
-    { "id": 1, "name": "GRID LAYOUT" },
-    { "id": 2, "name": "FLEXBOX LAYOUT" },
-    { "id": 3, "name": "CSS" }
+    { 
+      "id": 1, 
+      "name": "GRID LAYOUT" 
+    },
+    { 
+      "id": 2, 
+      "name": "FLEXBOX LAYOUT" 
+    },
+    { 
+      "id": 3, 
+      "name": "CSS" 
+    },
+    {
+      "id": 4,
+      "name": "REACT"
+    },
+    {
+      "id": 5,
+      "name": "REACT TYPESCRIPT"
+    }
   ],
   "links": [
     {
@@ -24,6 +41,16 @@
       "id": 4,
       "categoryId": 3,
       "link": "http://howtocenterincss.com/"
+    },
+    {
+      "id": 5,
+      "categoryId": 5,
+      "link": "https://github.com/Lemoncode/react-typescript-samples"
+    },
+    {
+      "id": 6,
+      "categoryId": 4,
+      "link": "https://egghead.io/courses/the-beginner-s-guide-to-react"
     }
   ]
 }
