@@ -12,7 +12,7 @@ interface IAppState {
   isLoading: boolean;
   hasErrors: boolean;
   errorMessage: string;
-  error: any;
+  error: Error;
   data: IData;
 }
 
@@ -66,18 +66,13 @@ const ChildListItem = (props: IChildListItemProps) => {
 };
 
 class App extends React.Component<IAppProps, IAppState> {
-  private _getLinkList = (categoryId: number): ILink[] =>
-    this.state.data.links.filter(
-      (link: ILink) => link.categoryId === categoryId
-    );
-
   constructor(props: IAppProps) {
     super(props);
     this.state = {
       isLoading: true,
       hasErrors: false,
       errorMessage: "",
-      error: {},
+      error: new Error(),
       data: {} as IData
     };
   }
@@ -96,7 +91,6 @@ class App extends React.Component<IAppProps, IAppState> {
         errorMessage: error.message,
         error: error
       });
-      console.log(error);
     }
   }
 
@@ -123,6 +117,11 @@ class App extends React.Component<IAppProps, IAppState> {
       </MainList>
     );
   }
+
+  private _getLinkList = (categoryId: number): ILink[] =>
+    this.state.data.links.filter(
+      (link: ILink) => link.categoryId === categoryId
+    );
 }
 
 export default App;
