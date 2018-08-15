@@ -66,7 +66,6 @@ const ChildListItem = (props: IChildListItemProps) => {
 };
 
 class App extends React.Component<IAppProps, IAppState> {
-
   constructor(props: IAppProps) {
     super(props);
     this.state = {
@@ -118,10 +117,11 @@ class App extends React.Component<IAppProps, IAppState> {
       </MainList>
     );
   }
+
   private _getLinkList = (categoryId: number): ILink[] =>
     this.state.data.links.filter(
       (link: ILink) => link.categoryId === categoryId
-    )
+    );
 }
 
 export default App;
