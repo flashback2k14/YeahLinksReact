@@ -4,8 +4,15 @@ import "./App.css";
 
 // INTERFACES
 
-interface IDataCompState {
+interface IAppProps {
+  dataSource: string;
+}
+
+interface IAppState {
   isLoading: boolean;
+  hasErrors: boolean;
+  errorMessage: string;
+  error: any;
   data: IData;
 }
 
@@ -58,28 +65,37 @@ const ChildListItem = (props: IChildListItemProps) => {
   );
 };
 
-class App extends React.Component<any, IDataCompState> {
+class App extends React.Component<IAppProps, IAppState> {
   private _getLinkList = (categoryId: number): ILink[] =>
     this.state.data.links.filter(
       (link: ILink) => link.categoryId === categoryId
     );
 
-  constructor(props: any) {
+  constructor(props: IAppProps) {
     super(props);
     this.state = {
       isLoading: true,
+      hasErrors: false,
+      errorMessage: "",
+      error: {},
       data: {} as IData
     };
   }
 
   async componentDidMount() {
     try {
-      const result: IData = await fromJson("./data/data.json?" + Date.now);
+      const result: IData = await fromJson(this.props.dataSource);
       this.setState({
         isLoading: false,
         data: result
       });
     } catch (error) {
+      this.setState({
+        isLoading: false,
+        hasErrors: true,
+        errorMessage: error.message,
+        error: error
+      });
       console.log(error);
     }
   }
@@ -87,6 +103,11 @@ class App extends React.Component<any, IDataCompState> {
   render() {
     return this.state.isLoading ? (
       <Loading />
+    ) : this.state.hasErrors ? (
+      <div>
+        <p>{this.state.errorMessage}</p>
+        <pre> {JSON.stringify(this.state.error, null, 2)} </pre>
+      </div>
     ) : (
       <MainList>
         {this.state.data.categories.map((category: ICategory) => (
