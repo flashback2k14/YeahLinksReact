@@ -1,5 +1,5 @@
 import * as React from "react";
 import { render } from "react-dom";
-import DataComp from "./DataComp";
+import App from "./App";
 
-render(<DataComp />, document.getElementById("root"));
+render(<App />, document.getElementById("root"));

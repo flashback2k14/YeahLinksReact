@@ -1,6 +1,6 @@
 import * as React from "react";
 import { fromJson, IData, ICategory, ILink } from "./DataFetcher";
-import "./DataComp.css";
+import "./App.css";
 
 // INTERFACES
 
@@ -58,7 +58,7 @@ const ChildListItem = (props: IChildListItemProps) => {
   );
 };
 
-class DataComp extends React.Component<any, IDataCompState> {
+class App extends React.Component<any, IDataCompState> {
   private _getLinkList = (categoryId: number): ILink[] =>
     this.state.data.links.filter(
       (link: ILink) => link.categoryId === categoryId
@@ -104,4 +104,4 @@ class DataComp extends React.Component<any, IDataCompState> {
   }
 }
 
-export default DataComp;
+export default App;
