@@ -71,6 +71,11 @@
       "id": 9,
       "categoryId": 6,
       "link": "https://medium.com/@nem121/todo-app-with-typescript-redux-e6a4c2f02079"
+    },
+    {
+      "id": 10,
+      "categoryId": 3,
+      "link": "https://codepen.io/mandelid/pen/vwKoe"
     }
   ]
 }

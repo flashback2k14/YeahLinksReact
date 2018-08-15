@@ -49,7 +49,10 @@ class DataComp extends React.Component<any, IDataCompState> {
 
   render() {
     return this.state.loading ? (
-      <p>loading...</p>
+      <div className="loading-container">
+        <div className="loading-text">loading...</div>
+        <div className="loading-spinner" />
+      </div>
     ) : (
       <ul className="list-main">
         {this.state.data.categories.map((category: ICategory) => (
