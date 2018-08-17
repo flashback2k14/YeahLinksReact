@@ -1,16 +1,16 @@
 {
   "categories": [
-    { 
-      "id": 1, 
-      "name": "GRID LAYOUT" 
+    {
+      "id": 1,
+      "name": "GRID LAYOUT"
     },
-    { 
-      "id": 2, 
-      "name": "FLEXBOX LAYOUT" 
+    {
+      "id": 2,
+      "name": "FLEXBOX LAYOUT"
     },
-    { 
-      "id": 3, 
-      "name": "CSS" 
+    {
+      "id": 3,
+      "name": "CSS"
     },
     {
       "id": 4,
@@ -23,8 +23,19 @@
     {
       "id": 6,
       "name": "REACT REDUX TYPESCRIPT"
+    },
+    {
+      "id": 7,
+      "name": "TESTING"
+    },
+    {
+      "id": 8,
+      "name": "REACT REDUX"
+    },
+    {
+      "id": 9,
+      "name": "REDUX"
     }
-
   ],
   "links": [
     {
@@ -76,6 +87,116 @@
       "id": 10,
       "categoryId": 3,
       "link": "https://codepen.io/mandelid/pen/vwKoe"
+    },
+    {
+      "id": 11,
+      "categoryId": 4,
+      "link": "https://css-tricks.com/working-with-refs-in-react/"
+    },
+    {
+      "id": 12,
+      "categoryId": 2,
+      "link": "https://www.smashingmagazine.com/2018/08/flexbox-alignment/"
+    },
+    {
+      "id": 13,
+      "categoryId": 7,
+      "link": "https://blog.logrocket.com/a-quick-and-complete-guide-to-mocha-testing-d0e0ea09f09d"
+    },
+    {
+      "id": 14,
+      "categoryId": 1,
+      "link": "http://grid.malven.co/"
+    },
+    {
+      "id": 15,
+      "categoryId": 4,
+      "link": "https://alligator.io/react/axios-react/"
+    },
+    {
+      "id": 16,
+      "categoryId": 4,
+      "link": "https://www.robinwieruch.de/react-pass-props-to-component/"
+    },
+    {
+      "id": 17,
+      "categoryId": 2,
+      "link": "https://medium.com/codyhouse/speed-up-alignment-in-css-with-flexbox-utility-classes-4030ce88e170"
+    },
+    {
+      "id": 18,
+      "categoryId": 4,
+      "link": "https://www.robinwieruch.de/react-render-props-pattern/"
+    },
+    {
+      "id": 19,
+      "categoryId": 5,
+      "link": "https://sevketyalcin.com/blog/setup-your-own-webpack-config-for-react-with-typescript/"
+    },
+    {
+      "id": 20,
+      "categoryId": 8,
+      "link": "https://daveceddia.com/context-api-vs-redux/"
+    },
+    {
+      "id": 21,
+      "categoryId": 5,
+      "link": "https://github.com/Microsoft/TypeScript-React-Starter/"
+    },
+    {
+      "id": 22,
+      "categoryId": 4,
+      "link": "https://www.bhnywl.com/blog/styling-react-components/"
+    },
+    {
+      "id": 23,
+      "categoryId": 4,
+      "link": "http://lucybain.com/blog/2016/react-state-vs-pros/"
+    },
+    {
+      "id": 24,
+      "categoryId": 4,
+      "link": "https://css-tricks.com/digging-into-react-context/"
+    },
+    {
+      "id": 25,
+      "categoryId": 4,
+      "link": "https://css-tricks.com/render-children-in-react-using-fragment-or-array-components/"
+    },
+    {
+      "id": 26,
+      "categoryId": 4,
+      "link": "https://css-tricks.com/react-code-style-guide/"
+    },
+    {
+      "id": 27,
+      "categoryId": 4,
+      "link": "https://devhints.io/react"
+    },
+    {
+      "id": 28,
+      "categoryId": 4,
+      "link": "https://github.com/kay-is/react-from-zero"
+    },
+    {
+      "id": 29,
+      "categoryId": 4,
+      "link": "https://reactpatterns.com/"
+    },
+    {
+      "id": 30,
+      "categoryId": 4,
+      "link": "https://scrimba.com/g/greactchatkit"
+    },
+    {
+      "id": 31,
+      "categoryId": 4,
+      "link": "https://egghead.io/courses/the-beginner-s-guide-to-react"
+    },
+    {
+      "id": 32,
+      "categoryId": 9,
+      "link": "https://www.smashingmagazine.com/2018/07/redux-designers-guide/"
     }
   ]
 }
