@@ -14,14 +14,17 @@ interface IAppState {
   errorMessage: string;
   error: Error;
   data: IData;
+  showChildListForCategoryId: number;
 }
 
 interface IMainListItemProps {
   category: ICategory;
+  toggle: Function;
 }
 
 interface IChildListItemProps {
   link: ILink;
+  isHidden: boolean;
 }
 
 // LOADING COMPONENT
@@ -46,7 +49,11 @@ const MainListCardItem = (props: any) => {
 };
 
 const MainListItem = (props: IMainListItemProps) => {
-  return <li className="list-main_item">{props.category.name}</li>;
+  return (
+    <li className="list-main_item" onClick={() => props.toggle(props.category)}>
+      {props.category.name}
+    </li>
+  );
 };
 
 // CHILD LIST COMPONENTS
@@ -57,7 +64,11 @@ const ChildList = (props: any) => {
 
 const ChildListItem = (props: IChildListItemProps) => {
   return (
-    <li className="list-child_item">
+    <li
+      className={`list-child_item ${
+        props.isHidden ? "list-child_item-hidden" : ""
+      }`}
+    >
       <a className="link" href={props.link.link} target="blank">
         {props.link.link}
       </a>
@@ -73,7 +84,8 @@ class App extends React.Component<IAppProps, IAppState> {
       hasErrors: false,
       errorMessage: "",
       error: new Error(),
-      data: {} as IData
+      data: {} as IData,
+      showChildListForCategoryId: -1
     };
   }
 
@@ -106,10 +118,16 @@ class App extends React.Component<IAppProps, IAppState> {
       <MainList>
         {this.state.data.categories.map((category: ICategory) => (
           <MainListCardItem key={category.id}>
-            <MainListItem category={category} />
+            <MainListItem category={category} toggle={this._toggle} />
             <ChildList>
               {this._getLinkList(category.id).map((link: ILink) => (
-                <ChildListItem key={link.id} link={link} />
+                <ChildListItem
+                  key={link.id}
+                  link={link}
+                  isHidden={
+                    link.categoryId !== this.state.showChildListForCategoryId
+                  }
+                />
               ))}
             </ChildList>
           </MainListCardItem>
@@ -117,6 +135,13 @@ class App extends React.Component<IAppProps, IAppState> {
       </MainList>
     );
   }
+
+  private _toggle = (category: ICategory) => {
+    this.setState({
+      showChildListForCategoryId:
+        category.id === this.state.showChildListForCategoryId ? -1 : category.id
+    });
+  };
 
   private _getLinkList = (categoryId: number): ILink[] =>
     this.state.data.links.filter(

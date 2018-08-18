@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="theme-color" content="#000000">
+	<meta name="theme-color" content="#141E30">
 	<!--
     manifest.json provides metadata used when your web app is added to the
     homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
@@ -31,13 +30,15 @@
 
     html,
     body {
+      height: 100vh;
       margin: 0;
       padding: 0;
-      background: #EEEEEE;
+	    background: #141E30; /* fallback for old browsers */ 
+      background: -webkit-linear-gradient(to bottom, #243B55, #141E30); /*Chrome 10-25, Safari 5.1-6 */ 
+      background: linear-gradient(to bottom, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+,Chrome 26+, Opera 12+, Safari 7+ */
     }
   </style>
 </head>
-
 <body>
 	<div id="root"></div>
 	<!--
@@ -51,5 +52,4 @@
     To create a production bundle, use `npm run build` or `yarn build`.
   -->
 </body>
-
 </html>
