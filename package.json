@@ -23,6 +23,7 @@
     "typescript": "^2.7.2"
   },
   "author": "flashback2k14",
+  "homepage": ".",
   "now": {
     "alias": "yeah-links"
   }
