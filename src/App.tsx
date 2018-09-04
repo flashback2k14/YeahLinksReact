@@ -161,10 +161,22 @@ class App extends React.Component<IAppProps, IAppState> {
     });
   };
 
+  private _sortLinks = (a: ILink, b: ILink) => {
+    const linkA = a.link.toUpperCase();
+    const linkB = b.link.toUpperCase();
+    if (linkA < linkB) {
+      return -1;
+    }
+    if (linkA > linkB) {
+      return 1;
+    }
+    return 0;
+  };
+
   private _getLinkList = (categoryId: number): ILink[] =>
-    this.state.data.links.filter(
-      (link: ILink) => link.categoryId === categoryId
-    );
+    this.state.data.links
+      .filter((link: ILink) => link.categoryId === categoryId)
+      .sort(this._sortLinks);
 }
 
 export default App;
