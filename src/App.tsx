@@ -17,6 +17,11 @@ interface IAppState {
   showChildListForCategoryId: number;
 }
 
+interface IErrorLogProps {
+  errorMessage: String;
+  error: Error;
+}
+
 interface IMainListItemProps {
   category: ICategory;
   toggle: Function;
@@ -34,6 +39,17 @@ const Loading = () => {
     <div className="loading-container">
       <div className="loading-text">loading...</div>
       <div className="loading-spinner" />
+    </div>
+  );
+};
+
+// ERROR COMPONENT
+
+const ErrorLog = (props: IErrorLogProps) => {
+  return (
+    <div className="error-container">
+      <h3 className="error-message">Error: {props.errorMessage}</h3>
+      <pre className="error-object">{JSON.stringify(props.error, null, 2)}</pre>
     </div>
   );
 };
@@ -76,6 +92,8 @@ const ChildListItem = (props: IChildListItemProps) => {
   );
 };
 
+// MAIN COMPONENT
+
 class App extends React.Component<IAppProps, IAppState> {
   constructor(props: IAppProps) {
     super(props);
@@ -110,10 +128,10 @@ class App extends React.Component<IAppProps, IAppState> {
     return this.state.isLoading ? (
       <Loading />
     ) : this.state.hasErrors ? (
-      <div>
-        <p>{this.state.errorMessage}</p>
-        <pre> {JSON.stringify(this.state.error, null, 2)} </pre>
-      </div>
+      <ErrorLog
+        errorMessage={this.state.errorMessage}
+        error={this.state.error}
+      />
     ) : (
       <MainList>
         {this.state.data.categories.map((category: ICategory) => (
