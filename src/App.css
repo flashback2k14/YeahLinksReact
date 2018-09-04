@@ -1,8 +1,11 @@
 .card {
   color: #00ffa2;
   background: #004466;
-  border-radius: 6px;
+  border: solid 1px #00ffa2;
   margin-bottom: 24px;
+}
+
+.card:hover {
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
     0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
 }
@@ -52,14 +55,11 @@
   text-decoration-line: underline;
 }
 
-.link:visited {
-  text-decoration: underline dotted #67c9a5;
-  color: #67c9a5;
-}
+.link:visited,
 .link:visited:hover,
 .link:visited:focus {
-  text-decoration: underline dotted #67c9a5;
-  color: #67c9a5;
+  text-decoration: underline dotted #00ff8d;
+  color: #00ff8d;
 }
 
 .loading-container {
