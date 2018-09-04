@@ -1,7 +1,8 @@
 .card {
-  background: white;
+  color: #00ffa2;
+  background: #004466;
   border-radius: 6px;
-  margin-bottom: 18px;
+  margin-bottom: 24px;
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
     0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
 }
@@ -15,8 +16,8 @@
 }
 
 .list-main_item {
-  background: black;
-  color: white;
+  color: #004466;
+  background: #00ffa2;
   line-height: 2;
   padding-left: 8px;
   font-weight: 900;
@@ -43,22 +44,22 @@
 .link {
   text-decoration: none;
   outline: none;
-  color: #616161;
+  color: #00ffa2;
   word-wrap: break-word;
 }
 .link:hover,
 .link:focus {
-  text-decoration: underline;
-  color: #212121;
+  text-decoration-line: underline;
 }
 
 .link:visited {
-  color: #616161;
+  text-decoration: underline dotted #67c9a5;
+  color: #67c9a5;
 }
 .link:visited:hover,
 .link:visited:focus {
-  text-decoration: underline;
-  color: #212121;
+  text-decoration: underline dotted #67c9a5;
+  color: #67c9a5;
 }
 
 .loading-container {
@@ -74,7 +75,7 @@
 
 .loading-text {
   margin-bottom: 4px;
-  color: #fff;
+  color: #00ffa2;
 }
 
 .loading-spinner {
@@ -83,7 +84,7 @@
   height: 50px;
   border: 3px solid rgba(255, 255, 255, 0.8);
   border-radius: 50%;
-  border-top-color: #141e30;
+  border-top-color: #00ffa2;
   animation: spin 1s ease-in-out infinite;
   -webkit-animation: spin 1s ease-in-out infinite;
 }
