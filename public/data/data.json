@@ -35,6 +35,18 @@
     {
       "id": 9,
       "name": "REDUX"
+    },
+    {
+      "id": 10,
+      "name": "SOFTWARE ENGINEERING"
+    },
+    {
+      "id": 11,
+      "name": "DESIGN"
+    },
+    {
+      "id": 12,
+      "name": "REACT NATIVE"
     }
   ],
   "links": [
@@ -197,6 +209,161 @@
       "id": 32,
       "categoryId": 9,
       "link": "https://www.smashingmagazine.com/2018/07/redux-designers-guide/"
+    },
+    {
+      "id": 33,
+      "categoryId": 4,
+      "link": "https://medium.com/@mksglu/react-16-3-lifecycle-methods-7ac4e2f2024a"
+    },
+    {
+      "id": 34,
+      "categoryId": 10,
+      "link": "https://progressivetooling.com/"
+    },
+    {
+      "id": 35,
+      "categoryId": 4,
+      "link": "https://itnext.io/combining-hocs-with-the-new-reacts-context-api-9d3617dccf0b"
+    },
+    {
+      "id": 36,
+      "categoryId": 7,
+      "link": "https://css-tricks.com/an-intro-to-web-app-testing-with-cypress-io/"
+    },
+    {
+      "id": 37,
+      "categoryId": 10,
+      "link": "https://www.youtube.com/watch?v=-NP_upexPFg"
+    },
+    {
+      "id": 38,
+      "categoryId": 4,
+      "link": "https://medium.com/dailyjs/stop-repeating-yourself-with-routes-links-and-location-parameter-parsing-in-your-react-app-a9ac317dfe1"
+    },
+    {
+      "id": 39,
+      "categoryId": 11,
+      "link": "https://rsms.me/inter/"
+    },
+    {
+      "id": 40,
+      "categoryId": 4,
+      "link": "https://auth0.com/blog/react-tutorial-building-and-securing-your-first-app/"
+    },
+    {
+      "id": 41,
+      "categoryId": 12,
+      "link": "https://docs.expo.io/versions/latest/distribution/building-standalone-apps"
+    },
+    {
+      "id": 42,
+      "categoryId": 10,
+      "link": "https://github.com/lukeed/pwa"
+    },
+    {
+      "id": 43,
+      "categoryId": 4,
+      "link": "https://jakezatecky.github.io/react-checkbox-tree/"
+    },
+    {
+      "id": 44,
+      "categoryId": 11,
+      "link": "https://colorable.jxnblk.com/"
+    },
+    {
+      "id": 45,
+      "categoryId": 4,
+      "link": "https://pawelgrzybek.github.io/siema/"
+    },
+    {
+      "id": 46,
+      "categoryId": 4,
+      "link": "https://css-tricks.com/props-and-proptypes-in-react/"
+    },
+    {
+      "id": 47,
+      "categoryId": 10,
+      "link": "https://www.theodinproject.com/courses/web-development-101"
+    },
+    {
+      "id": 48,
+      "categoryId": 4,
+      "link": "https://github.com/drcmda/react-spring"
+    },
+    {
+      "id": 49,
+      "categoryId": 1,
+      "link": "https://css-tricks.com/super-power-grid-components-with-css-custom-properties/"
+    },
+    {
+      "id": 50,
+      "categoryId": 4,
+      "link": "https://www.eventbrite.com/engineering/create-reusable-react-file-uploaders/"
+    },
+    {
+      "id": 51,
+      "categoryId": 7,
+      "link": "https://scotch.io/tutorials/test-a-node-restful-api-with-mocha-and-chai"
+    },
+    {
+      "id": 52,
+      "categoryId": 4,
+      "link": "http://nmajor.com/posts/access-and-refresh-token-handling-with-redux"
+    },
+    {
+      "id": 53,
+      "categoryId": 4,
+      "link": "https://github.com/jossmac/react-toast-notifications"
+    },
+    {
+      "id": 54,
+      "categoryId": 10,
+      "link": "https://30secondsofinterviews.org/"
+    },
+    {
+      "id": 55,
+      "categoryId": 12,
+      "link": "https://reactnavigation.org/"
+    },
+    {
+      "id": 56,
+      "categoryId": 8,
+      "link": "https://github.com/deamme/laco"
+    },
+    {
+      "id": 57,
+      "categoryId": 7,
+      "link": "https://github.com/checkly/puppeteer-recorder"
+    },
+    {
+      "id": 58,
+      "categoryId": 4,
+      "link": "https://www.youtube.com/watch?v=AiJ8tRRH0f8&list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf"
+    },
+    {
+      "id": 59,
+      "categoryId": 12,
+      "link": "https://expo.io/"
+    },
+    {
+      "id": 60,
+      "categoryId": 4,
+      "link": "https://auth0.com/blog/react-context-api-managing-state-with-ease/"
+    },
+    {
+      "id": 61,
+      "categoryId": 4,
+      "link": "https://hackernoon.com/checklist-for-writing-highly-reusable-components-in-react-and-vue-531f963864bd"
+    },
+    {
+      "id": 62,
+      "categoryId": 4,
+      "link": "https://auth0.com/blog/developing-real-time-web-applications-with-server-sent-events/"
+    },
+    {
+      "id": 63,
+      "categoryId": 11,
+      "link": "https://sketch2code.azurewebsites.net/"
     }
   ]
 }
