@@ -1,3 +1,72 @@
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 12px;
+  margin-top: 12px;
+  margin-right: 12px;
+  height: 36px;
+}
+
+.search-input {
+  margin-right: 12px;
+  margin-bottom: 4px;
+  flex: 1 0 auto;
+
+  background: #004466;
+  color: #00ffa2;
+  caret-color: #00ffa2;
+
+  border: 0;
+  border-bottom: 2px solid #00ff8d;
+  outline: none;
+}
+.search-input_closed {
+  display: none;
+}
+
+.search-container_button {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+}
+.search-container_button-right {
+  width: 100vw;
+}
+
+.search-button {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  background: #004466;
+  cursor: pointer;
+}
+.search-button svg {
+  fill: #00ff8d;
+}
+.search-button:hover svg {
+  fill: #004466;
+  background: #00ff8d;
+  border-radius: 50%;
+}
+
+.reset-button {
+  border: none;
+  margin-top: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+
 .card {
   color: #00ffa2;
   background: #004466;
@@ -13,6 +82,7 @@
 .list-main {
   list-style-type: none;
   line-height: 1.5;
+  margin-top: 8px;
   padding-left: 14px;
   padding-right: 14px;
   font-size: 1.1em;

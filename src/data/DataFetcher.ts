@@ -1,18 +1,4 @@
-export interface ICategory {
-  id: number;
-  name: string;
-}
-
-export interface ILink {
-  id: number;
-  categoryId: number;
-  link: string;
-}
-
-export interface IData {
-  categories: ICategory[];
-  links: ILink[];
-}
+import { IData, ICategory } from "../interfaces";
 
 export const fromJson = async (source: string): Promise<IData> => {
   const response = await window.fetch(source);
