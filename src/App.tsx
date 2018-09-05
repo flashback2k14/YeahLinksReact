@@ -46,6 +46,8 @@ const Search = (props: any) => {
     if (refTxtInput.classList.contains("search-input_closed")) {
       refTxtInput.value = "";
       props.onClearFilter();
+    } else {
+      refTxtInput.focus();
     }
   };
 
@@ -105,7 +107,7 @@ const ChildListItem = (props: IChildListItemProps) => {
         props.isHidden ? "list-child_item-hidden" : ""
       }`}
     >
-      <a className="link" href={props.link.link} target="blank">
+      <a className="link" href={props.link.link} target="_blank" rel="noopener">
         {props.link.link}
       </a>
     </li>
