@@ -192,29 +192,27 @@ class App extends React.Component<IAppProps, IAppState> {
   };
 
   private _filterData = (e: any): void => {
-    // filter links
-    const filteredLinks = this.state.initialData.links.filter(
+    const { categories, links } = this.state.initialData;
+
+    const filteredLinks = links.filter(
       (link: ILink) =>
         link.link.toUpperCase().search(e.target.value.toUpperCase()) !== -1
     );
-    // get categories for links
-    let filteredCategories: ICategory[] = [];
-    this.state.initialData.categories.forEach((category: ICategory) => {
-      filteredLinks.forEach((link: ILink) => {
-        if (link.categoryId === category.id) {
-          filteredCategories.push(category);
-        }
-      });
+
+    const filteredCategories = categories.filter(
+      (category: ICategory) =>
+        -1 !==
+        filteredLinks.findIndex(
+          (link: ILink) => link.categoryId === category.id
+        )
+    );
+
+    this.setState({
+      data: {
+        categories: filteredCategories,
+        links: filteredLinks
+      }
     });
-    // remove duplicate categories
-    filteredCategories = Array.from(new Set([...filteredCategories]));
-    // create filtered IData
-    const filteredData = {
-      categories: filteredCategories,
-      links: filteredLinks
-    } as IData;
-    // set new state
-    this.setState({ data: filteredData });
   };
 
   private _clearFilterData = (): void => {
