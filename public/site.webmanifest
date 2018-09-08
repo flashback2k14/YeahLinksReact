@@ -3,13 +3,13 @@
   "name": "Yeah! Links",
   "icons": [
     {
-      "src": "https://uploads.codesandbox.io/uploads/user/0c11be9c-9e58-4bed-a3a7-920728f5080a/GrVn-android-chrome-192x192.png",
+      "src": "https://uploads.codesandbox.io/uploads/user/0c11be9c-9e58-4bed-a3a7-920728f5080a/3-pT-android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://uploads.codesandbox.io/uploads/user/0c11be9c-9e58-4bed-a3a7-920728f5080a/hN1w-android-chrome-256x256.png",
-      "sizes": "256x256",
+      "src": "https://uploads.codesandbox.io/uploads/user/0c11be9c-9e58-4bed-a3a7-920728f5080a/MeP4-android-chrome-512x512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
