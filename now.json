@@ -1,0 +1,17 @@
+{
+  "name": "yeah-links",
+  "alias": "yeah-links",
+  "static": {
+    "headers": [
+      {
+        "source": "**/*.@(png|ico|xml|svg)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=172800"
+          }
+        ]
+      }
+    ]
+  }
+}

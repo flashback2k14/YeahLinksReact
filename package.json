@@ -22,9 +22,5 @@
     "@types/react-dom": "16.0.4",
     "typescript": "^2.7.2"
   },
-  "author": "flashback2k14",
-  "homepage": ".",
-  "now": {
-    "alias": "yeah-links"
-  }
+  "author": "flashback2k14"
 }
