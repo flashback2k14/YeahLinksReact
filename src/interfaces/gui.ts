@@ -11,7 +11,7 @@ export interface IAppState {
   error: Error;
   initialData: IData;
   data: IData;
-  showChildListForCategoryId: number;
+  showChildListForCategoryIds: number[];
 }
 
 export interface IErrorLogProps {

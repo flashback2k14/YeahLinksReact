@@ -1,5 +1,11 @@
 import * as React from "react";
-import { fromJson } from "./data/DataFetcher";
+import {
+  fetchfromJson,
+  immutablePush,
+  immutableSplice,
+  findIndex,
+  contains
+} from "./data/Helper";
 import {
   IData,
   ICategory,
@@ -82,10 +88,6 @@ const MainList = (props: any) => {
   return <ul className="list-main">{props.children}</ul>;
 };
 
-const MainListCardItem = (props: any) => {
-  return <div className="card">{props.children}</div>;
-};
-
 const MainListItem = (props: IMainListItemProps) => {
   return (
     <li className="list-main_item" onClick={() => props.toggle(props.category)}>
@@ -97,7 +99,7 @@ const MainListItem = (props: IMainListItemProps) => {
 // CHILD LIST COMPONENTS
 
 const ChildList = (props: any) => {
-  return <ul className="list-child">{props.children}</ul>;
+  return <ul className="card list-child">{props.children}</ul>;
 };
 
 const ChildListItem = (props: IChildListItemProps) => {
@@ -126,7 +128,7 @@ class App extends React.Component<IAppProps, IAppState> {
       error: new Error(),
       initialData: {} as IData,
       data: {} as IData,
-      showChildListForCategoryId: -1
+      showChildListForCategoryIds: []
     };
   }
 
@@ -143,14 +145,14 @@ class App extends React.Component<IAppProps, IAppState> {
         error={this.state.error}
       />
     ) : (
-      <div>
+      <React.Fragment>
         <Search
           onInputChange={this._filterData}
           onClearFilter={this._clearFilterData}
         />
         <MainList>
           {this.state.data.categories.map((category: ICategory) => (
-            <MainListCardItem key={category.id}>
+            <React.Fragment key={category.id}>
               <MainListItem
                 category={category}
                 toggle={this._toggleChildList}
@@ -160,22 +162,23 @@ class App extends React.Component<IAppProps, IAppState> {
                   <ChildListItem
                     key={link.id}
                     link={link}
-                    isHidden={
-                      link.categoryId !== this.state.showChildListForCategoryId
-                    }
+                    isHidden={contains(
+                      this.state.showChildListForCategoryIds,
+                      link.categoryId
+                    )}
                   />
                 ))}
               </ChildList>
-            </MainListCardItem>
+            </React.Fragment>
           ))}
         </MainList>
-      </div>
+      </React.Fragment>
     );
   }
 
   private _fetchData = async (): Promise<void> => {
     try {
-      const result: IData = await fromJson(this.props.dataSource);
+      const result: IData = await fetchfromJson(this.props.dataSource);
       this.setState({
         isLoading: false,
         initialData: result,
@@ -196,7 +199,7 @@ class App extends React.Component<IAppProps, IAppState> {
 
     const filteredLinks = links.filter(
       (link: ILink) =>
-        link.link.toUpperCase().search(e.target.value.toUpperCase()) !== -1
+        -1 !== link.link.toUpperCase().search(e.target.value.toUpperCase())
     );
 
     const filteredCategories = categories.filter(
@@ -211,20 +214,31 @@ class App extends React.Component<IAppProps, IAppState> {
       data: {
         categories: filteredCategories,
         links: filteredLinks
-      }
+      },
+      showChildListForCategoryIds:
+        e.target.value === ""
+          ? []
+          : filteredCategories.map((category: ICategory) => category.id)
     });
   };
 
   private _clearFilterData = (): void => {
     this.setState((prevState: IAppState) => {
-      return { data: prevState.initialData };
+      return {
+        data: prevState.initialData,
+        showChildListForCategoryIds: []
+      };
     });
   };
 
   private _toggleChildList = (category: ICategory): void => {
+    const { showChildListForCategoryIds } = this.state;
+    const idx = findIndex(showChildListForCategoryIds, category.id);
     this.setState({
-      showChildListForCategoryId:
-        category.id === this.state.showChildListForCategoryId ? -1 : category.id
+      showChildListForCategoryIds:
+        idx !== -1
+          ? immutableSplice(showChildListForCategoryIds, idx, 1)
+          : immutablePush(showChildListForCategoryIds, category.id)
     });
   };
 

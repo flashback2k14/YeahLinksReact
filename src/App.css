@@ -109,18 +109,6 @@ body {
   -webkit-appearance: none;
 }
 
-.card {
-  color: #00ffa2;
-  background: #004466;
-  border: solid 1px #00ffa2;
-  margin-bottom: 24px;
-}
-
-.card:hover {
-  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
-    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
-}
-
 .list-main {
   list-style-type: none;
   line-height: 1.5;
@@ -137,6 +125,23 @@ body {
   padding-left: 8px;
   font-weight: 900;
   cursor: pointer;
+}
+
+.list-main_item:hover {
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  color: #00ffa2;
+  background: #004466;
+  border: solid 1px #00ffa2;
+  margin-bottom: 24px;
+}
+
+.card:hover {
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
 }
 
 .list-child {
