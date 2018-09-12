@@ -4,7 +4,8 @@ import {
   immutablePush,
   immutableSplice,
   findIndex,
-  contains
+  contains,
+  sortLinks
 } from "./data/Helper";
 import {
   IData,
@@ -13,6 +14,7 @@ import {
   IAppProps,
   IAppState,
   IErrorLogProps,
+  ISearchProps,
   IMainListItemProps,
   IChildListItemProps
 } from "./interfaces";
@@ -42,7 +44,7 @@ const ErrorLog = (props: IErrorLogProps) => {
 
 // SEARCH COMPONENT
 
-const Search = (props: any) => {
+const Search = (props: ISearchProps) => {
   let refTxtInput: HTMLInputElement;
   let refButtonContainer: HTMLDivElement;
 
@@ -57,12 +59,19 @@ const Search = (props: any) => {
     }
   };
 
+  const _handleKeydown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.which === 27) {
+      _toggle();
+    }
+  };
+
   return (
     <div className="search-container">
       <input
         className="search-input search-input_closed"
         ref={(ref: HTMLInputElement) => (refTxtInput = ref)}
         onChange={props.onInputChange}
+        onKeyDown={_handleKeydown}
       />
       <div
         className="search-container_button search-container_button-right"
@@ -194,7 +203,7 @@ class App extends React.Component<IAppProps, IAppState> {
     }
   };
 
-  private _filterData = (e: any): void => {
+  private _filterData = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const { categories, links } = this.state.initialData;
 
     const filteredLinks = links.filter(
@@ -245,19 +254,7 @@ class App extends React.Component<IAppProps, IAppState> {
   private _getLinkList = (categoryId: number): ILink[] =>
     this.state.data.links
       .filter((link: ILink) => link.categoryId === categoryId)
-      .sort(this._sortLinks);
-
-  private _sortLinks = (a: ILink, b: ILink): number => {
-    const linkA = a.link.toUpperCase();
-    const linkB = b.link.toUpperCase();
-    if (linkA < linkB) {
-      return -1;
-    }
-    if (linkA > linkB) {
-      return 1;
-    }
-    return 0;
-  };
+      .sort(sortLinks);
 }
 
 export default App;

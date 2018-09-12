@@ -1,4 +1,4 @@
-import { IData, ICategory } from "../interfaces";
+import { ICategory, IData, ILink } from "../interfaces";
 
 export const fetchfromJson = async (source: string): Promise<IData> => {
   const response = await window.fetch(source);
@@ -15,6 +15,18 @@ export const fetchfromJson = async (source: string): Promise<IData> => {
     return 0;
   });
   return responseData;
+};
+
+export const sortLinks = (a: ILink, b: ILink): number => {
+  const linkA = a.link.toUpperCase();
+  const linkB = b.link.toUpperCase();
+  if (linkA < linkB) {
+    return -1;
+  }
+  if (linkA > linkB) {
+    return 1;
+  }
+  return 0;
 };
 
 export const immutablePush = <T>(arr: T[], newEntry: T): T[] => {
