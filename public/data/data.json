@@ -47,6 +47,10 @@
     {
       "id": 12,
       "name": "REACT NATIVE"
+    },
+    {
+      "id": 13,
+      "name": "SIDE PROJECT"
     }
   ],
   "links": [
@@ -364,6 +368,131 @@
       "id": 63,
       "categoryId": 11,
       "link": "https://sketch2code.azurewebsites.net/"
+    },
+    {
+      "id": 64,
+      "categoryId": 13,
+      "link": "https://gohugo.io/"
+    },
+    {
+      "id": 65,
+      "categoryId": 13,
+      "link": "https://code.tutsplus.com/tutorials/make-creating-websites-fun-again-with-hugo-the-static-website-generator-written-in-go--cms-27319"
+    },
+    {
+      "id": 66,
+      "categoryId": 13,
+      "link": "https://github.com/googlesamples/google-photos"
+    },
+    {
+      "id": 67,
+      "categoryId": 13,
+      "link": "https://vuepress.vuejs.org/"
+    },
+    {
+      "id": 68,
+      "categoryId": 13,
+      "link": "https://snipcart.com/blog/vuepress-tutorial-vuejs-documentation"
+    },
+    {
+      "id": 69,
+      "categoryId": 13,
+      "link": "https://medium.com/vue-mastery/how-to-create-a-custom-vuepress-theme-with-vuetify-651b7d7e5092"
+    },
+    {
+      "id": 70,
+      "categoryId": 13,
+      "link": "https://www.npmjs.com/search?q=keywords:vuepress-theme"
+    },
+    {
+      "id": 71,
+      "categoryId": 13,
+      "link": "https://snipcart.com/blog/choose-best-static-site-generator"
+    },
+    {
+      "id": 72,
+      "categoryId": 4,
+      "link": "https://gist.github.com/bvaughn/8de925562903afd2e7a12554adcdda16"
+    },
+    {
+      "id": 73,
+      "categoryId": 3,
+      "link": "https://zellwk.com/blog/empty-and-blank/"
+    },
+    {
+      "id": 74,
+      "categoryId": 3,
+      "link": "https://tailwindcss.com/"
+    },
+    {
+      "id": 75,
+      "categoryId": 9,
+      "link": "https://hackernoon.com/goodbye-redux-26e6a27b3a0b"
+    },
+    {
+      "id": 76,
+      "categoryId": 11,
+      "link": "https://inclusive-components.design/"
+    },
+    {
+      "id": 77,
+      "categoryId": 4,
+      "link": "https://able.bio/drenther/track-page-visibility-in-react-using-render-props--78o9yw5"
+    },
+    {
+      "id": 78,
+      "categoryId": 12,
+      "link": "https://medium.com/react-native-training/how-to-configure-and-code-android-in-app-purchases-in-react-native-apps-a46247908862"
+    },
+    {
+      "id": 79,
+      "categoryId": 4,
+      "link": "https://css-tricks.com/render-caching-for-react/"
+    },
+    {
+      "id": 80,
+      "categoryId": 10,
+      "link": "https://refactoring.guru/"
+    },
+    {
+      "id": 81,
+      "categoryId": 4,
+      "link": "https://simply-react.netlify.com"
+    },
+    {
+      "id": 82,
+      "categoryId": 10,
+      "link": "https://blog.codinghorror.com/the-ten-commandments-of-egoless-programming/"
+    },
+    {
+      "id": 83,
+      "categoryId": 3,
+      "link": "https://codepen.io/Gthibaud/details/qMNYRJ"
+    },
+    {
+      "id": 84,
+      "categoryId": 10,
+      "link": "https://github.com/ryanmcdermott/clean-code-javascript"
+    },
+    {
+      "id": 85,
+      "categoryId": 10,
+      "link": "https://fullstack-developer.academy/restful-api-design-the-basics/"
+    },
+    {
+      "id": 86,
+      "categoryId": 10,
+      "link": "https://fullstack-developer.academy/restful-api-design-post-vs-put-vs-patch/"
+    },
+    {
+      "id": 87,
+      "categoryId": 10,
+      "link": "https://hackernoon.com/the-practical-guide-for-building-rest-api-in-nodejs-and-mongodb-include-passport-and-jwt-476720b70da0"
+    },
+    {
+      "id": 88,
+      "categoryId": 10,
+      "link": "https://gist.github.com/bryanrsmith/e8189b6b704fbd5ef21b"
     }
   ]
 }
