@@ -118,9 +118,17 @@ const ChildListItem = (props: IChildListItemProps) => {
         props.isHidden ? "list-child_item-hidden" : ""
       }`}
     >
-      <a className="link" href={props.link.link} target="_blank" rel="noopener">
-        {props.link.link}
-      </a>
+      <React.Fragment>
+        <a
+          className="link"
+          href={props.link.link}
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          {props.link.link}
+        </a>
+        {props.link.desc && <div className="link-desc">{props.link.desc}</div>}
+      </React.Fragment>
     </li>
   );
 };
@@ -206,9 +214,18 @@ class App extends React.Component<IAppProps, IAppState> {
   private _filterData = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const { categories, links } = this.state.initialData;
 
-    const filteredLinks = links.filter(
+    const filteredLinkLinks = links.filter(
       (link: ILink) =>
         -1 !== link.link.toUpperCase().search(e.target.value.toUpperCase())
+    );
+
+    const filteredLinkDescs = links.filter(
+      (link: ILink) =>
+        -1 !== link.desc.toUpperCase().search(e.target.value.toUpperCase())
+    );
+
+    const filteredLinks = Array.from(
+      new Set([...filteredLinkLinks, ...filteredLinkDescs])
     );
 
     const filteredCategories = categories.filter(

@@ -179,6 +179,12 @@ body {
   color: #00ff8d;
 }
 
+.link-desc {
+  padding-left: 8px;
+  font-size: smaller;
+  font-style: italic;
+}
+
 .loading-container {
   display: flex;
   flex-direction: column;

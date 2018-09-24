@@ -57,442 +57,530 @@
     {
       "id": 1,
       "categoryId": 1,
-      "link": "http://www.griddy.io/"
+      "link": "http://www.griddy.io/",
+      "desc": ""
     },
     {
       "id": 2,
       "categoryId": 1,
-      "link": "https://bitsofco.de/holy-grail-layout-css-grid/"
+      "link": "https://bitsofco.de/holy-grail-layout-css-grid/",
+      "desc": ""
     },
     {
       "id": 3,
       "categoryId": 2,
-      "link": "http://flexbox.help/"
+      "link": "http://flexbox.help/",
+      "desc": ""
     },
     {
       "id": 4,
       "categoryId": 3,
-      "link": "http://howtocenterincss.com/"
+      "link": "http://howtocenterincss.com/",
+      "desc": ""
     },
     {
       "id": 5,
       "categoryId": 5,
-      "link": "https://github.com/Lemoncode/react-typescript-samples"
+      "link": "https://github.com/Lemoncode/react-typescript-samples",
+      "desc": ""
     },
     {
       "id": 6,
       "categoryId": 4,
-      "link": "https://egghead.io/courses/the-beginner-s-guide-to-react"
+      "link": "https://egghead.io/courses/the-beginner-s-guide-to-react",
+      "desc": ""
     },
     {
       "id": 7,
       "categoryId": 3,
-      "link": "https://css-tricks.com/considerations-styling-modal/"
+      "link": "https://css-tricks.com/considerations-styling-modal/",
+      "desc": ""
     },
     {
       "id": 8,
       "categoryId": 3,
-      "link": "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_bottom"
+      "link": "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_bottom",
+      "desc": ""
     },
     {
       "id": 9,
       "categoryId": 6,
-      "link": "https://medium.com/@nem121/todo-app-with-typescript-redux-e6a4c2f02079"
+      "link": "https://medium.com/@nem121/todo-app-with-typescript-redux-e6a4c2f02079",
+      "desc": ""
     },
     {
       "id": 10,
       "categoryId": 3,
-      "link": "https://codepen.io/mandelid/pen/vwKoe"
+      "link": "https://codepen.io/mandelid/pen/vwKoe",
+      "desc": ""
     },
     {
       "id": 11,
       "categoryId": 4,
-      "link": "https://css-tricks.com/working-with-refs-in-react/"
+      "link": "https://css-tricks.com/working-with-refs-in-react/",
+      "desc": ""
     },
     {
       "id": 12,
       "categoryId": 2,
-      "link": "https://www.smashingmagazine.com/2018/08/flexbox-alignment/"
+      "link": "https://www.smashingmagazine.com/2018/08/flexbox-alignment/",
+      "desc": ""
     },
     {
       "id": 13,
       "categoryId": 7,
-      "link": "https://blog.logrocket.com/a-quick-and-complete-guide-to-mocha-testing-d0e0ea09f09d"
+      "link": "https://blog.logrocket.com/a-quick-and-complete-guide-to-mocha-testing-d0e0ea09f09d",
+      "desc": ""
     },
     {
       "id": 14,
       "categoryId": 1,
-      "link": "http://grid.malven.co/"
+      "link": "http://grid.malven.co/",
+      "desc": ""
     },
     {
       "id": 15,
       "categoryId": 4,
-      "link": "https://alligator.io/react/axios-react/"
+      "link": "https://alligator.io/react/axios-react/",
+      "desc": ""
     },
     {
       "id": 16,
       "categoryId": 4,
-      "link": "https://www.robinwieruch.de/react-pass-props-to-component/"
+      "link": "https://www.robinwieruch.de/react-pass-props-to-component/",
+      "desc": ""
     },
     {
       "id": 17,
       "categoryId": 2,
-      "link": "https://medium.com/codyhouse/speed-up-alignment-in-css-with-flexbox-utility-classes-4030ce88e170"
+      "link": "https://medium.com/codyhouse/speed-up-alignment-in-css-with-flexbox-utility-classes-4030ce88e170",
+      "desc": ""
     },
     {
       "id": 18,
       "categoryId": 4,
-      "link": "https://www.robinwieruch.de/react-render-props-pattern/"
+      "link": "https://www.robinwieruch.de/react-render-props-pattern/",
+      "desc": ""
     },
     {
       "id": 19,
       "categoryId": 5,
-      "link": "https://sevketyalcin.com/blog/setup-your-own-webpack-config-for-react-with-typescript/"
+      "link": "https://sevketyalcin.com/blog/setup-your-own-webpack-config-for-react-with-typescript/",
+      "desc": ""
     },
     {
       "id": 20,
       "categoryId": 8,
-      "link": "https://daveceddia.com/context-api-vs-redux/"
+      "link": "https://daveceddia.com/context-api-vs-redux/",
+      "desc": ""
     },
     {
       "id": 21,
       "categoryId": 5,
-      "link": "https://github.com/Microsoft/TypeScript-React-Starter/"
+      "link": "https://github.com/Microsoft/TypeScript-React-Starter/",
+      "desc": ""
     },
     {
       "id": 22,
       "categoryId": 4,
-      "link": "https://www.bhnywl.com/blog/styling-react-components/"
+      "link": "https://www.bhnywl.com/blog/styling-react-components/",
+      "desc": ""
     },
     {
       "id": 23,
       "categoryId": 4,
-      "link": "http://lucybain.com/blog/2016/react-state-vs-pros/"
+      "link": "http://lucybain.com/blog/2016/react-state-vs-pros/",
+      "desc": ""
     },
     {
       "id": 24,
       "categoryId": 4,
-      "link": "https://css-tricks.com/digging-into-react-context/"
+      "link": "https://css-tricks.com/digging-into-react-context/",
+      "desc": ""
     },
     {
       "id": 25,
       "categoryId": 4,
-      "link": "https://css-tricks.com/render-children-in-react-using-fragment-or-array-components/"
+      "link": "https://css-tricks.com/render-children-in-react-using-fragment-or-array-components/",
+      "desc": ""
     },
     {
       "id": 26,
       "categoryId": 4,
-      "link": "https://css-tricks.com/react-code-style-guide/"
+      "link": "https://css-tricks.com/react-code-style-guide/",
+      "desc": ""
     },
     {
       "id": 27,
       "categoryId": 4,
-      "link": "https://devhints.io/react"
+      "link": "https://devhints.io/react",
+      "desc": ""
     },
     {
       "id": 28,
       "categoryId": 4,
-      "link": "https://github.com/kay-is/react-from-zero"
+      "link": "https://github.com/kay-is/react-from-zero",
+      "desc": ""
     },
     {
       "id": 29,
       "categoryId": 4,
-      "link": "https://reactpatterns.com/"
+      "link": "https://reactpatterns.com/",
+      "desc": ""
     },
     {
       "id": 30,
       "categoryId": 4,
-      "link": "https://scrimba.com/g/greactchatkit"
+      "link": "https://scrimba.com/g/greactchatkit",
+      "desc": ""
     },
     {
       "id": 31,
       "categoryId": 4,
-      "link": "https://egghead.io/courses/the-beginner-s-guide-to-react"
+      "link": "https://egghead.io/courses/the-beginner-s-guide-to-react",
+      "desc": ""
     },
     {
       "id": 32,
       "categoryId": 9,
-      "link": "https://www.smashingmagazine.com/2018/07/redux-designers-guide/"
+      "link": "https://www.smashingmagazine.com/2018/07/redux-designers-guide/",
+      "desc": ""
     },
     {
       "id": 33,
       "categoryId": 4,
-      "link": "https://medium.com/@mksglu/react-16-3-lifecycle-methods-7ac4e2f2024a"
+      "link": "https://medium.com/@mksglu/react-16-3-lifecycle-methods-7ac4e2f2024a",
+      "desc": ""
     },
     {
       "id": 34,
       "categoryId": 10,
-      "link": "https://progressivetooling.com/"
+      "link": "https://progressivetooling.com/",
+      "desc": ""
     },
     {
       "id": 35,
       "categoryId": 4,
-      "link": "https://itnext.io/combining-hocs-with-the-new-reacts-context-api-9d3617dccf0b"
+      "link": "https://itnext.io/combining-hocs-with-the-new-reacts-context-api-9d3617dccf0b",
+      "desc": ""
     },
     {
       "id": 36,
       "categoryId": 7,
-      "link": "https://css-tricks.com/an-intro-to-web-app-testing-with-cypress-io/"
+      "link": "https://css-tricks.com/an-intro-to-web-app-testing-with-cypress-io/",
+      "desc": ""
     },
     {
       "id": 37,
       "categoryId": 10,
-      "link": "https://www.youtube.com/watch?v=-NP_upexPFg"
+      "link": "https://www.youtube.com/watch?v=-NP_upexPFg",
+      "desc": ""
     },
     {
       "id": 38,
       "categoryId": 4,
-      "link": "https://medium.com/dailyjs/stop-repeating-yourself-with-routes-links-and-location-parameter-parsing-in-your-react-app-a9ac317dfe1"
+      "link": "https://medium.com/dailyjs/stop-repeating-yourself-with-routes-links-and-location-parameter-parsing-in-your-react-app-a9ac317dfe1",
+      "desc": ""
     },
     {
       "id": 39,
       "categoryId": 11,
-      "link": "https://rsms.me/inter/"
+      "link": "https://rsms.me/inter/",
+      "desc": ""
     },
     {
       "id": 40,
       "categoryId": 4,
-      "link": "https://auth0.com/blog/react-tutorial-building-and-securing-your-first-app/"
+      "link": "https://auth0.com/blog/react-tutorial-building-and-securing-your-first-app/",
+      "desc": ""
     },
     {
       "id": 41,
       "categoryId": 12,
-      "link": "https://docs.expo.io/versions/latest/distribution/building-standalone-apps"
+      "link": "https://docs.expo.io/versions/latest/distribution/building-standalone-apps",
+      "desc": ""
     },
     {
       "id": 42,
       "categoryId": 10,
-      "link": "https://github.com/lukeed/pwa"
+      "link": "https://github.com/lukeed/pwa",
+      "desc": ""
     },
     {
       "id": 43,
       "categoryId": 4,
-      "link": "https://jakezatecky.github.io/react-checkbox-tree/"
+      "link": "https://jakezatecky.github.io/react-checkbox-tree/",
+      "desc": ""
     },
     {
       "id": 44,
       "categoryId": 11,
-      "link": "https://colorable.jxnblk.com/"
+      "link": "https://colorable.jxnblk.com/",
+      "desc": ""
     },
     {
       "id": 45,
       "categoryId": 4,
-      "link": "https://pawelgrzybek.github.io/siema/"
+      "link": "https://pawelgrzybek.github.io/siema/",
+      "desc": ""
     },
     {
       "id": 46,
       "categoryId": 4,
-      "link": "https://css-tricks.com/props-and-proptypes-in-react/"
+      "link": "https://css-tricks.com/props-and-proptypes-in-react/",
+      "desc": ""
     },
     {
       "id": 47,
       "categoryId": 10,
-      "link": "https://www.theodinproject.com/courses/web-development-101"
+      "link": "https://www.theodinproject.com/courses/web-development-101",
+      "desc": ""
     },
     {
       "id": 48,
       "categoryId": 4,
-      "link": "https://github.com/drcmda/react-spring"
+      "link": "https://github.com/drcmda/react-spring",
+      "desc": ""
     },
     {
       "id": 49,
       "categoryId": 1,
-      "link": "https://css-tricks.com/super-power-grid-components-with-css-custom-properties/"
+      "link": "https://css-tricks.com/super-power-grid-components-with-css-custom-properties/",
+      "desc": ""
     },
     {
       "id": 50,
       "categoryId": 4,
-      "link": "https://www.eventbrite.com/engineering/create-reusable-react-file-uploaders/"
+      "link": "https://www.eventbrite.com/engineering/create-reusable-react-file-uploaders/",
+      "desc": ""
     },
     {
       "id": 51,
       "categoryId": 7,
-      "link": "https://scotch.io/tutorials/test-a-node-restful-api-with-mocha-and-chai"
+      "link": "https://scotch.io/tutorials/test-a-node-restful-api-with-mocha-and-chai",
+      "desc": ""
     },
     {
       "id": 52,
       "categoryId": 4,
-      "link": "http://nmajor.com/posts/access-and-refresh-token-handling-with-redux"
+      "link": "http://nmajor.com/posts/access-and-refresh-token-handling-with-redux",
+      "desc": ""
     },
     {
       "id": 53,
       "categoryId": 4,
-      "link": "https://github.com/jossmac/react-toast-notifications"
+      "link": "https://github.com/jossmac/react-toast-notifications",
+      "desc": ""
     },
     {
       "id": 54,
       "categoryId": 10,
-      "link": "https://30secondsofinterviews.org/"
+      "link": "https://30secondsofinterviews.org/",
+      "desc": ""
     },
     {
       "id": 55,
       "categoryId": 12,
-      "link": "https://reactnavigation.org/"
+      "link": "https://reactnavigation.org/",
+      "desc": ""
     },
     {
       "id": 56,
       "categoryId": 8,
-      "link": "https://github.com/deamme/laco"
+      "link": "https://github.com/deamme/laco",
+      "desc": ""
     },
     {
       "id": 57,
       "categoryId": 7,
-      "link": "https://github.com/checkly/puppeteer-recorder"
+      "link": "https://github.com/checkly/puppeteer-recorder",
+      "desc": ""
     },
     {
       "id": 58,
       "categoryId": 4,
-      "link": "https://www.youtube.com/watch?v=AiJ8tRRH0f8&list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf"
+      "link": "https://www.youtube.com/watch?v=AiJ8tRRH0f8&list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf",
+      "desc": ""
     },
     {
       "id": 59,
       "categoryId": 12,
-      "link": "https://expo.io/"
+      "link": "https://expo.io/",
+      "desc": ""
     },
     {
       "id": 60,
       "categoryId": 4,
-      "link": "https://auth0.com/blog/react-context-api-managing-state-with-ease/"
+      "link": "https://auth0.com/blog/react-context-api-managing-state-with-ease/",
+      "desc": ""
     },
     {
       "id": 61,
       "categoryId": 4,
-      "link": "https://hackernoon.com/checklist-for-writing-highly-reusable-components-in-react-and-vue-531f963864bd"
+      "link": "https://hackernoon.com/checklist-for-writing-highly-reusable-components-in-react-and-vue-531f963864bd",
+      "desc": ""
     },
     {
       "id": 62,
       "categoryId": 4,
-      "link": "https://auth0.com/blog/developing-real-time-web-applications-with-server-sent-events/"
+      "link": "https://auth0.com/blog/developing-real-time-web-applications-with-server-sent-events/",
+      "desc": ""
     },
     {
       "id": 63,
       "categoryId": 11,
-      "link": "https://sketch2code.azurewebsites.net/"
+      "link": "https://sketch2code.azurewebsites.net/",
+      "desc": ""
     },
     {
       "id": 64,
       "categoryId": 13,
-      "link": "https://gohugo.io/"
+      "link": "https://gohugo.io/",
+      "desc": ""
     },
     {
       "id": 65,
       "categoryId": 13,
-      "link": "https://code.tutsplus.com/tutorials/make-creating-websites-fun-again-with-hugo-the-static-website-generator-written-in-go--cms-27319"
+      "link": "https://code.tutsplus.com/tutorials/make-creating-websites-fun-again-with-hugo-the-static-website-generator-written-in-go--cms-27319",
+      "desc": ""
     },
     {
       "id": 66,
       "categoryId": 13,
-      "link": "https://github.com/googlesamples/google-photos"
+      "link": "https://github.com/googlesamples/google-photos",
+      "desc": ""
     },
     {
       "id": 67,
       "categoryId": 13,
-      "link": "https://vuepress.vuejs.org/"
+      "link": "https://vuepress.vuejs.org/",
+      "desc": ""
     },
     {
       "id": 68,
       "categoryId": 13,
-      "link": "https://snipcart.com/blog/vuepress-tutorial-vuejs-documentation"
+      "link": "https://snipcart.com/blog/vuepress-tutorial-vuejs-documentation",
+      "desc": ""
     },
     {
       "id": 69,
       "categoryId": 13,
-      "link": "https://medium.com/vue-mastery/how-to-create-a-custom-vuepress-theme-with-vuetify-651b7d7e5092"
+      "link": "https://medium.com/vue-mastery/how-to-create-a-custom-vuepress-theme-with-vuetify-651b7d7e5092",
+      "desc": ""
     },
     {
       "id": 70,
       "categoryId": 13,
-      "link": "https://www.npmjs.com/search?q=keywords:vuepress-theme"
+      "link": "https://www.npmjs.com/search?q=keywords:vuepress-theme",
+      "desc": ""
     },
     {
       "id": 71,
       "categoryId": 13,
-      "link": "https://snipcart.com/blog/choose-best-static-site-generator"
+      "link": "https://snipcart.com/blog/choose-best-static-site-generator",
+      "desc": ""
     },
     {
       "id": 72,
       "categoryId": 4,
-      "link": "https://gist.github.com/bvaughn/8de925562903afd2e7a12554adcdda16"
+      "link": "https://gist.github.com/bvaughn/8de925562903afd2e7a12554adcdda16",
+      "desc": ""
     },
     {
       "id": 73,
       "categoryId": 3,
-      "link": "https://zellwk.com/blog/empty-and-blank/"
+      "link": "https://zellwk.com/blog/empty-and-blank/",
+      "desc": ""
     },
     {
       "id": 74,
       "categoryId": 3,
-      "link": "https://tailwindcss.com/"
+      "link": "https://tailwindcss.com/",
+      "desc": ""
     },
     {
       "id": 75,
       "categoryId": 9,
-      "link": "https://hackernoon.com/goodbye-redux-26e6a27b3a0b"
+      "link": "https://hackernoon.com/goodbye-redux-26e6a27b3a0b",
+      "desc": ""
     },
     {
       "id": 76,
       "categoryId": 11,
-      "link": "https://inclusive-components.design/"
+      "link": "https://inclusive-components.design/",
+      "desc": ""
     },
     {
       "id": 77,
       "categoryId": 4,
-      "link": "https://able.bio/drenther/track-page-visibility-in-react-using-render-props--78o9yw5"
+      "link": "https://able.bio/drenther/track-page-visibility-in-react-using-render-props--78o9yw5",
+      "desc": ""
     },
     {
       "id": 78,
       "categoryId": 12,
-      "link": "https://medium.com/react-native-training/how-to-configure-and-code-android-in-app-purchases-in-react-native-apps-a46247908862"
+      "link": "https://medium.com/react-native-training/how-to-configure-and-code-android-in-app-purchases-in-react-native-apps-a46247908862",
+      "desc": ""
     },
     {
       "id": 79,
       "categoryId": 4,
-      "link": "https://css-tricks.com/render-caching-for-react/"
+      "link": "https://css-tricks.com/render-caching-for-react/",
+      "desc": ""
     },
     {
       "id": 80,
       "categoryId": 10,
-      "link": "https://refactoring.guru/"
+      "link": "https://refactoring.guru/",
+      "desc": ""
     },
     {
       "id": 81,
       "categoryId": 4,
-      "link": "https://simply-react.netlify.com"
+      "link": "https://simply-react.netlify.com",
+      "desc": ""
     },
     {
       "id": 82,
       "categoryId": 10,
-      "link": "https://blog.codinghorror.com/the-ten-commandments-of-egoless-programming/"
+      "link": "https://blog.codinghorror.com/the-ten-commandments-of-egoless-programming/",
+      "desc": ""
     },
     {
       "id": 83,
       "categoryId": 3,
-      "link": "https://codepen.io/Gthibaud/details/qMNYRJ"
+      "link": "https://codepen.io/Gthibaud/details/qMNYRJ",
+      "desc": ""
     },
     {
       "id": 84,
       "categoryId": 10,
-      "link": "https://github.com/ryanmcdermott/clean-code-javascript"
+      "link": "https://github.com/ryanmcdermott/clean-code-javascript",
+      "desc": ""
     },
     {
       "id": 85,
       "categoryId": 10,
-      "link": "https://fullstack-developer.academy/restful-api-design-the-basics/"
+      "link": "https://fullstack-developer.academy/restful-api-design-the-basics/",
+      "desc": ""
     },
     {
       "id": 86,
       "categoryId": 10,
-      "link": "https://fullstack-developer.academy/restful-api-design-post-vs-put-vs-patch/"
+      "link": "https://fullstack-developer.academy/restful-api-design-post-vs-put-vs-patch/",
+      "desc": ""
     },
     {
       "id": 87,
       "categoryId": 10,
-      "link": "https://hackernoon.com/the-practical-guide-for-building-rest-api-in-nodejs-and-mongodb-include-passport-and-jwt-476720b70da0"
+      "link": "https://hackernoon.com/the-practical-guide-for-building-rest-api-in-nodejs-and-mongodb-include-passport-and-jwt-476720b70da0",
+      "desc": ""
     },
     {
       "id": 88,
       "categoryId": 10,
-      "link": "https://gist.github.com/bryanrsmith/e8189b6b704fbd5ef21b"
+      "link": "https://gist.github.com/bryanrsmith/e8189b6b704fbd5ef21b",
+      "desc": "JS - HTTP Client Wrapper"
     }
   ]
 }

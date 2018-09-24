@@ -7,6 +7,7 @@ export interface ILink {
   id: number;
   categoryId: number;
   link: string;
+  desc: string;
 }
 
 export interface IData {
