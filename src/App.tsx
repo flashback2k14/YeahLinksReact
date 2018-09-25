@@ -128,6 +128,7 @@ const ChildListItem = (props: IChildListItemProps) => {
           {props.link.link}
         </a>
         {props.link.desc && <div className="link-desc">{props.link.desc}</div>}
+        <hr className="link-rule" />
       </React.Fragment>
     </li>
   );

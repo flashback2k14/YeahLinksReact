@@ -18,11 +18,11 @@
     },
     {
       "id": 5,
-      "name": "REACT TYPESCRIPT"
+      "name": "ONLINE WORKSPACE"
     },
     {
       "id": 6,
-      "name": "REACT REDUX TYPESCRIPT"
+      "name": "STATE MANAGEMENT"
     },
     {
       "id": 7,
@@ -30,11 +30,11 @@
     },
     {
       "id": 8,
-      "name": "REACT REDUX"
+      "name": "ATOMIC DESIGN"
     },
     {
       "id": 9,
-      "name": "REDUX"
+      "name": "OTHER FRAMEWORKS"
     },
     {
       "id": 10,
@@ -80,9 +80,9 @@
     },
     {
       "id": 5,
-      "categoryId": 5,
+      "categoryId": 4,
       "link": "https://github.com/Lemoncode/react-typescript-samples",
-      "desc": ""
+      "desc": "TypeScript Samples"
     },
     {
       "id": 6,
@@ -106,7 +106,7 @@
       "id": 9,
       "categoryId": 6,
       "link": "https://medium.com/@nem121/todo-app-with-typescript-redux-e6a4c2f02079",
-      "desc": ""
+      "desc": "Example for Redux with TypeScript"
     },
     {
       "id": 10,
@@ -164,21 +164,21 @@
     },
     {
       "id": 19,
-      "categoryId": 5,
+      "categoryId": 4,
       "link": "https://sevketyalcin.com/blog/setup-your-own-webpack-config-for-react-with-typescript/",
-      "desc": ""
+      "desc": "Webpack Setup for TypeScript"
     },
     {
       "id": 20,
-      "categoryId": 8,
+      "categoryId": 6,
       "link": "https://daveceddia.com/context-api-vs-redux/",
-      "desc": ""
+      "desc": "Context API vs Redux"
     },
     {
       "id": 21,
-      "categoryId": 5,
+      "categoryId": 4,
       "link": "https://github.com/Microsoft/TypeScript-React-Starter/",
-      "desc": ""
+      "desc": "TypeScript Starter"
     },
     {
       "id": 22,
@@ -242,7 +242,7 @@
     },
     {
       "id": 32,
-      "categoryId": 9,
+      "categoryId": 6,
       "link": "https://www.smashingmagazine.com/2018/07/redux-designers-guide/",
       "desc": ""
     },
@@ -262,7 +262,7 @@
       "id": 35,
       "categoryId": 4,
       "link": "https://itnext.io/combining-hocs-with-the-new-reacts-context-api-9d3617dccf0b",
-      "desc": ""
+      "desc": "Context API"
     },
     {
       "id": 36,
@@ -386,7 +386,7 @@
     },
     {
       "id": 56,
-      "categoryId": 8,
+      "categoryId": 6,
       "link": "https://github.com/deamme/laco",
       "desc": ""
     },
@@ -500,9 +500,9 @@
     },
     {
       "id": 75,
-      "categoryId": 9,
+      "categoryId": 6,
       "link": "https://hackernoon.com/goodbye-redux-26e6a27b3a0b",
-      "desc": ""
+      "desc": "You don't need Redux anymore"
     },
     {
       "id": 76,
@@ -581,6 +581,234 @@
       "categoryId": 10,
       "link": "https://gist.github.com/bryanrsmith/e8189b6b704fbd5ef21b",
       "desc": "JS - HTTP Client Wrapper"
+    },
+    {
+      "id": 89,
+      "categoryId": 5,
+      "link": "https://codesandbox.io",
+      "desc": "Web - Frontend"
+    },
+    {
+      "id": 90,
+      "categoryId": 5,
+      "link": "https://expo.io/",
+      "desc": "React Native"
+    },
+    {
+      "id": 91,
+      "categoryId": 5,
+      "link": "https://glitch.com/",
+      "desc": "Node - Backend (https://glitch.com/storage)"
+    },
+    {
+      "id": 92,
+      "categoryId": 5,
+      "link": "https://www.eclipse.org/che/",
+      "desc": "Java - Backend"
+    },
+    {
+      "id": 93,
+      "categoryId": 4,
+      "link": "https://medium.com/@faizanv/authentication-for-your-react-and-express-application-w-json-web-tokens-923515826e0",
+      "desc": "JWT Express Example"
+    },
+    {
+      "id": 94,
+      "categoryId": 4,
+      "link": "https://jaredpalmer.com/formik",
+      "desc": "Form Component Library"
+    },
+    {
+      "id": 95,
+      "categoryId": 4,
+      "link": "https://auth0.com/blog/building-a-component-library-with-react-and-storybook/",
+      "desc": "Storyboard Example"
+    },
+    {
+      "id": 96,
+      "categoryId": 4,
+      "link": "https://tech.travelaudience.com/how-to-test-asynchronous-data-fetching-on-a-react-component-ff2ee7433d71",
+      "desc": "Testing Asynchron Data"
+    },
+    {
+      "id": 97,
+      "categoryId": 4,
+      "link": "https://blog.usejournal.com/implement-tree-view-component-with-reactjs-and-styled-components-5eea3b1603cf",
+      "desc": "Treeview Example"
+    },
+    {
+      "id": 98,
+      "categoryId": 4,
+      "link": "https://blog.logrocket.com/an-imperative-guide-to-setstate-in-react-b837ceaf8304",
+      "desc": "setState Tutorial"
+    },
+    {
+      "id": 99,
+      "categoryId": 4,
+      "link": "https://emotion.sh/",
+      "desc": "CSS-in-JS Styling Library"
+    },
+    {
+      "id": 100,
+      "categoryId": 4,
+      "link": "https://www.docz.site/",
+      "desc": "Documentation Library"
+    },
+    {
+      "id": 101,
+      "categoryId": 4,
+      "link": "https://blog.bitsrc.io/implement-better-drag-and-drop-in-your-react-app-beafc4451599",
+      "desc": "Drag'n'Drop Example"
+    },
+    {
+      "id": 102,
+      "categoryId": 4,
+      "link": "https://medium.com/@Charles_Stover/cache-your-react-event-listeners-to-improve-performance-14f635a62e15",
+      "desc": "Caching"
+    },
+    {
+      "id": 103,
+      "categoryId": 7,
+      "link": "https://github.com/kentcdodds/dom-testing-library",
+      "desc": "Library"
+    },
+    {
+      "id": 104,
+      "categoryId": 4,
+      "link": "https://github.com/ghengeveld/react-webworker",
+      "desc": "Web Worker Library"
+    },
+    {
+      "id": 105,
+      "categoryId": 4,
+      "link": "https://blog.usejournal.com/folder-structure-in-react-apps-c2ae8974d21f",
+      "desc": "Folder Structure"
+    },
+    {
+      "id": 106,
+      "categoryId": 8,
+      "link": "https://blog.usejournal.com/thinking-about-react-atomically-608c865d2262",
+      "desc": ""
+    },
+    {
+      "id": 107,
+      "categoryId": 8,
+      "link": "http://bradfrost.com/blog/link/thinking-about-react-atomically/",
+      "desc": ""
+    },
+    {
+      "id": 108,
+      "categoryId": 8,
+      "link": "http://bradfrost.com/blog/post/atomic-web-design/",
+      "desc": ""
+    },
+    {
+      "id": 109,
+      "categoryId": 8,
+      "link": "https://arc.js.org/",
+      "desc": "React Starter Kit"
+    },
+    {
+      "id": 110,
+      "categoryId": 4,
+      "link": "https://www.robinwieruch.de/javascript-fundamentals-react-requirements/",
+      "desc": ""
+    },
+    {
+      "id": 111,
+      "categoryId": 10,
+      "link": "https://jsonutils.com/",
+      "desc": "JSON to Class Generator"
+    },
+    {
+      "id": 112,
+      "categoryId": 10,
+      "link": "https://blog.bitsrc.io/introduction-to-glitch-for-node-js-apps-in-the-cloud-cd263de5683f",
+      "desc": "Glitch Introduction"
+    },
+    {
+      "id": 113,
+      "categoryId": 3,
+      "link": "https://css-tricks.com/updating-a-css-variable-with-javascript/",
+      "desc": ""
+    },
+    {
+      "id": 114,
+      "categoryId": 3,
+      "link": "https://css-tricks.com/whats-the-difference-between-dogs-html-and-dogs-html/",
+      "desc": "Difference between Relative and Absolute Path"
+    },
+    {
+      "id": 115,
+      "categoryId": 3,
+      "link": "https://moritzgiessmann.de/accessibility-cheatsheet/",
+      "desc": ""
+    },
+    {
+      "id": 116,
+      "categoryId": 8,
+      "link": "https://medium.com/@yejodido/atomic-components-managing-dynamic-react-components-using-atomic-design-part-1-5f07451f261f",
+      "desc": ""
+    },
+    {
+      "id": 117,
+      "categoryId": 10,
+      "link": "https://dev.to/hardkoded/how-to-organize-your-git-branches-4dci",
+      "desc": "Branching Stategy"
+    },
+    {
+      "id": 118,
+      "categoryId": 12,
+      "link": "https://github.com/meedan/react-native-share-menu",
+      "desc": "Share Menu Library"
+    },
+    {
+      "id": 119,
+      "categoryId": 9,
+      "link": "https://github.com/m3g4p0p/from-html",
+      "desc": "DOM Element Creating Library"
+    },
+    {
+      "id": 120,
+      "categoryId": 9,
+      "link": "https://egghead.io/lessons/vue-js-intro-to-offline-first-progressive-web-apps-in-vue-js",
+      "desc": "Vue.js, PWA, Tutorial"
+    },
+    {
+      "id": 121,
+      "categoryId": 9,
+      "link": "https://lusaxweb.github.io/vuesax/",
+      "desc": "Vue.js Component Library"
+    },
+    {
+      "id": 122,
+      "categoryId": 9,
+      "link": "https://developer.okta.com/blog/2018/08/27/build-crud-app-vuejs-netcore",
+      "desc": "Vue.js, .NET Core, Tutorial"
+    },
+    {
+      "id": 123,
+      "categoryId": 9,
+      "link": "https://www.smashingmagazine.com/2018/09/pwa-angular-6/",
+      "desc": "Angular, PWA, Tutorial"
+    },
+    {
+      "id": 124,
+      "categoryId": 9,
+      "link": "https://scotch.io/tutorials/build-a-ssr-app-with-preact-unistore-and-preact-router",
+      "desc": "Preact, SSR, Tutorial"
+    },
+    {
+      "id": 125,
+      "categoryId": 13,
+      "link": "https://chriscavs.github.io/t-writer-demo/",
+      "desc": "Typewriter Effect Library"
+    },
+    {
+      "id": 126,
+      "categoryId": 10,
+      "link": "https://gist.github.com/EddyVerbruggen/e394b07d1e2817effe551a4943fba0d4",
+      "desc": "Add Labels to Gmail Inbox"
     }
   ]
 }
