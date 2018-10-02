@@ -112,7 +112,7 @@
       "id": 10,
       "categoryId": 3,
       "link": "https://codepen.io/mandelid/pen/vwKoe",
-      "desc": ""
+      "desc": "Simple Spinner"
     },
     {
       "id": 11,
@@ -340,7 +340,7 @@
       "id": 48,
       "categoryId": 4,
       "link": "https://github.com/drcmda/react-spring",
-      "desc": ""
+      "desc": "Animation Library"
     },
     {
       "id": 49,
@@ -484,7 +484,7 @@
       "id": 72,
       "categoryId": 4,
       "link": "https://gist.github.com/bvaughn/8de925562903afd2e7a12554adcdda16",
-      "desc": ""
+      "desc": "Introduction Profiler API"
     },
     {
       "id": 73,
@@ -496,7 +496,7 @@
       "id": 74,
       "categoryId": 3,
       "link": "https://tailwindcss.com/",
-      "desc": ""
+      "desc": "Utility Library"
     },
     {
       "id": 75,
@@ -550,7 +550,7 @@
       "id": 83,
       "categoryId": 3,
       "link": "https://codepen.io/Gthibaud/details/qMNYRJ",
-      "desc": ""
+      "desc": "Animation Example - Ocean current"
     },
     {
       "id": 84,
