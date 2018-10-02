@@ -1,11 +1,6 @@
-import * as React from "react";
 import styled from "react-emotion";
 
-interface IChildListProps {
-  children: React.ReactNode;
-}
-
-const List = styled("ul")`
+export const LinkList = styled("ul")`
   display: block;
   list-style-type: square;
   line-height: 1.5;
@@ -20,9 +15,3 @@ const List = styled("ul")`
     box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
   }
 `;
-
-// rename to LinkList
-
-export const ChildList = (props: IChildListProps) => (
-  <List>{props.children}</List>
-);

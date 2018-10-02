@@ -5,7 +5,7 @@ import {
   SearchButtonContainer,
   SearchButton,
   SearchButtonIcon
-} from "../atoms/index";
+} from "../atoms";
 
 interface ISearchProps {
   onClearFilter: Function;

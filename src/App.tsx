@@ -1,23 +1,8 @@
 import * as React from "react";
 import { injectGlobal } from "emotion";
-import {
-  fetchfromJson,
-  immutablePush,
-  immutableSplice,
-  findIndex,
-  contains,
-  sortLinks
-} from "./data/Helper";
-import { IData, ICategory, ILink } from "./interfaces";
-import {
-  Loading,
-  ErrorLog,
-  MainList,
-  MainListItem,
-  ChildList,
-  ChildListItem,
-  Search
-} from "./components";
+import { IData, ICategory, ILink, Helper } from "./data";
+import { CategoryList, CategoryItem, LinkList } from "./components/atoms";
+import { ErrorLog, LinkItem, Loading, Search } from "./components/molecules";
 
 injectGlobal`
   @import url("https://rsms.me/inter/inter-ui.css");
@@ -107,35 +92,36 @@ class App extends React.Component<IAppProps, IAppState> {
           onInputChange={this._filterData}
           onClearFilter={this._clearFilterData}
         />
-        <MainList>
+        <CategoryList>
           {this.state.data.categories.map((category: ICategory) => (
             <React.Fragment key={category.id}>
-              <MainListItem
-                category={category}
-                toggle={this._toggleChildList}
-              />
-              <ChildList>
-                {this._getLinkList(category.id).map((link: ILink) => (
-                  <ChildListItem
-                    key={link.id}
-                    link={link}
-                    isHidden={contains(
-                      this.state.showChildListForCategoryIds,
-                      link.categoryId
-                    )}
-                  />
-                ))}
-              </ChildList>
+              <CategoryItem onClick={() => this._toggleChildList(category)}>
+                {category.name}
+              </CategoryItem>
+              <li>
+                <LinkList>
+                  {this._getLinkList(category.id).map((link: ILink) => (
+                    <LinkItem
+                      key={link.id}
+                      link={link}
+                      isHidden={Helper.contains(
+                        this.state.showChildListForCategoryIds,
+                        link.categoryId
+                      )}
+                    />
+                  ))}
+                </LinkList>
+              </li>
             </React.Fragment>
           ))}
-        </MainList>
+        </CategoryList>
       </React.Fragment>
     );
   }
 
   private _fetchData = async (): Promise<void> => {
     try {
-      const result: IData = await fetchfromJson(this.props.dataSource);
+      const result: IData = await Helper.fetchfromJson(this.props.dataSource);
       this.setState({
         isLoading: false,
         initialData: result,
@@ -199,19 +185,19 @@ class App extends React.Component<IAppProps, IAppState> {
 
   private _toggleChildList = (category: ICategory): void => {
     const { showChildListForCategoryIds } = this.state;
-    const idx = findIndex(showChildListForCategoryIds, category.id);
+    const idx = Helper.findIndex(showChildListForCategoryIds, category.id);
     this.setState({
       showChildListForCategoryIds:
         idx !== -1
-          ? immutableSplice(showChildListForCategoryIds, idx, 1)
-          : immutablePush(showChildListForCategoryIds, category.id)
+          ? Helper.immutableSplice(showChildListForCategoryIds, idx, 1)
+          : Helper.immutablePush(showChildListForCategoryIds, category.id)
     });
   };
 
   private _getLinkList = (categoryId: number): ILink[] =>
     this.state.data.links
       .filter((link: ILink) => link.categoryId === categoryId)
-      .sort(sortLinks);
+      .sort(Helper.sortLinks);
 }
 
 export default App;
