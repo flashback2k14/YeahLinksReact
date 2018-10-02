@@ -45,18 +45,21 @@ export class Search extends React.Component<ISearchProps, ISearchState> {
   }
 
   private _toggle = () => {
-    this.setState((prevState: ISearchState) => {
-      return {
-        isInputVisible: !prevState.isInputVisible
-      };
-    });
-
-    if (this.state.isInputVisible) {
-      this._refTxtInput.focus();
-    } else {
-      this._refTxtInput.value = "";
-      this.props.onClearFilter();
-    }
+    this.setState(
+      (prevState: ISearchState) => {
+        return {
+          isInputVisible: !prevState.isInputVisible
+        };
+      },
+      () => {
+        if (this.state.isInputVisible) {
+          this._refTxtInput.focus();
+        } else {
+          this._refTxtInput.value = "";
+          this.props.onClearFilter();
+        }
+      }
+    );
   };
 
   private _handleKeydown = (event: React.KeyboardEvent<HTMLInputElement>) => {
