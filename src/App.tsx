@@ -4,6 +4,7 @@ import { IData, ICategory, ILink, Helper } from "./data";
 import { CategoryList, CategoryItem, LinkList } from "./components/atoms";
 import { ErrorLog, LinkItem, Loading, Search } from "./components/molecules";
 
+/* tslint:disable */
 injectGlobal`
   @import url("https://rsms.me/inter/inter-ui.css");
 
@@ -45,6 +46,7 @@ injectGlobal`
     background: transparent;
   }
 `;
+/* tslint:enable */
 
 interface IAppProps {
   dataSource: string;
