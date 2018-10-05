@@ -16,3 +16,4 @@ export * from "./SearchButtonContainer";
 export * from "./SearchButtonIcon";
 export * from "./SearchContainer";
 export * from "./SearchInput";
+export * from "./SearchInputLabel";
