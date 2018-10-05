@@ -1,6 +1,7 @@
 import * as React from "react";
 import {
   SearchContainer,
+  SearchInputLabel,
   SearchInput,
   SearchButtonContainer,
   SearchButton,
@@ -29,6 +30,9 @@ export class Search extends React.Component<ISearchProps, ISearchState> {
   render() {
     return (
       <SearchContainer>
+        <SearchInputLabel isVisible={this.state.isInputVisible}>
+          Search
+        </SearchInputLabel>
         <SearchInput
           innerRef={(ref: HTMLInputElement) => (this._refTxtInput = ref)}
           isVisible={this.state.isInputVisible}
