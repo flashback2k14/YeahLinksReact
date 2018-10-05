@@ -21,11 +21,11 @@ export const LinkItem = (props: IChildListItemProps) => (
         rel="noopener noreferrer nofollow"
       >
         {props.link.link}
-        {props.link.desc && (
-          <LinkItemDescription>{props.link.desc}</LinkItemDescription>
-        )}
-        <LinkItemSeparator />
       </Link>
+      {props.link.desc && (
+        <LinkItemDescription>{props.link.desc}</LinkItemDescription>
+      )}
+      <LinkItemSeparator />
     </React.Fragment>
   </LinkItemContainer>
 );

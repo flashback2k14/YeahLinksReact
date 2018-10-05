@@ -875,6 +875,120 @@
       "categoryId": 9,
       "link": "http://tabulator.info/",
       "desc": "JS - DataTable Library"
+    },
+    {
+      "id": 138,
+      "categoryId": 12,
+      "link": "https://itnext.io/how-we-boosted-the-performance-of-our-react-native-app-191b8d338347",
+      "desc": "Performance Optimisation"
+    },
+    {
+      "id": 139,
+      "categoryId": 12,
+      "link": "https://medium.com/react-native-training/progressive-image-loading-in-react-native-e7a01827feb7",
+      "desc": "Progressive Image Loading"
+    },
+    {
+      "id": 140,
+      "categoryId": 7,
+      "link": "https://blog.bitsrc.io/how-to-test-react-components-using-jest-and-enzyme-fab851a43875",
+      "desc": "React"
+    },
+    {
+      "id": 141,
+      "categoryId": 7,
+      "link": "https://medium.com/flatiron-labs/creating-readable-tests-using-react-testing-library-2bd03c49c284",
+      "desc": "React"
+    },
+    {
+      "id": 142,
+      "categoryId": 13,
+      "link": "https://mciastek.github.io/sal/",
+      "desc": "Scroll Animation Library"
+    },
+    {
+      "id": 143,
+      "categoryId": 1,
+      "link": "https://css-tricks.com/preventing-a-grid-blowout/",
+      "desc": ""
+    },
+    {
+      "id": 144,
+      "categoryId": 10,
+      "link": "https://hackernoon.com/10-useful-tools-and-libraries-for-programmer-and-it-professionals-914e64e0eabc",
+      "desc": "Tool & Libraries"
+    },
+    {
+      "id": 145,
+      "categoryId": 4,
+      "link": "https://codedaily.io/tutorials/58/Immutable-Data-with-Immer-and-React-setState",
+      "desc": "Immutable Data Library"
+    },
+    {
+      "id": 146,
+      "categoryId": 4,
+      "link": "https://github.com/i18next/react-i18next",
+      "desc": "Internationalization Library"
+    },
+    {
+      "id": 147,
+      "categoryId": 4,
+      "link": "https://blog.bitsrc.io/reusable-components-in-react-a-practical-guide-ec15a81a4d71",
+      "desc": "Reusable Components"
+    },
+    {
+      "id": 148,
+      "categoryId": 4,
+      "link": "http://www.developer-cheatsheets.com/react",
+      "desc": "Cheatsheet"
+    },
+    {
+      "id": 149,
+      "categoryId": 4,
+      "link": "https://medium.com/@Dane_s/react-js-compound-components-a6e54b5c9992",
+      "desc": "Compound Components"
+    },
+    {
+      "id": 150,
+      "categoryId": 13,
+      "link": "https://codepen.io/joelewis/pen/ePOrmV",
+      "desc": "Dynamic Placeholders Example"
+    },
+    {
+      "id": 151,
+      "categoryId": 6,
+      "link": "https://blog.usejournal.com/choosing-between-redux-and-reacts-context-api-272ca20224b2",
+      "desc": "Redux vs. Context API"
+    },
+    {
+      "id": 152,
+      "categoryId": 10,
+      "link": "https://blog.bitsrc.io/a-beginners-guide-to-closures-in-javascript-97d372284dda",
+      "desc": "JS Closures"
+    },
+    {
+      "id": 153,
+      "categoryId": 13,
+      "link": "https://blog.bitsrc.io/using-airtable-as-a-handy-cloud-storage-for-your-apps-ae6cce0efe11",
+      "desc": "Airtable - Storage"
+    },
+    {
+      "id": 154,
+      "categoryId": 13,
+      "link": "https://css-tricks.com/use-airtable-front-end-developer/",
+      "desc": "Airtable - Storage"
+    },
+    {
+      "id": 155,
+      "categoryId": 9,
+      "link": "https://www.codeproject.com/Articles/1262045/Learning-Entity-Framework-Day-3-ASP-NET-Web-API-2",
+      "desc": "ASP.NET Web API"
+    },
+    {
+      "id": 156,
+      "categoryId": 9,
+      "link": "https://www.codeproject.com/Articles/1260600/Speed-Up-ASP-NET-Core-WEB-API-Application-Part-1",
+      "desc": "ASP.NET Web API"
     }
   ]
 }
