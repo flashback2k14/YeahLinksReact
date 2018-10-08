@@ -136,7 +136,7 @@
       "id": 14,
       "categoryId": 1,
       "link": "http://grid.malven.co/",
-      "desc": ""
+      "desc": "Cheatsheet"
     },
     {
       "id": 15,
@@ -236,9 +236,9 @@
     },
     {
       "id": 31,
-      "categoryId": 4,
-      "link": "https://egghead.io/courses/the-beginner-s-guide-to-react",
-      "desc": ""
+      "categoryId": 10,
+      "link": "https://www.fullstack.cafe/",
+      "desc": "Job Interview Questions"
     },
     {
       "id": 32,
@@ -376,7 +376,7 @@
       "id": 54,
       "categoryId": 10,
       "link": "https://30secondsofinterviews.org/",
-      "desc": ""
+      "desc": "Job Interview Questions"
     },
     {
       "id": 55,
@@ -989,6 +989,90 @@
       "categoryId": 9,
       "link": "https://www.codeproject.com/Articles/1260600/Speed-Up-ASP-NET-Core-WEB-API-Application-Part-1",
       "desc": "ASP.NET Web API"
+    },
+    {
+      "id": 157,
+      "categoryId": 4,
+      "link": "https://webpack.jakoblind.no/",
+      "desc": "Webpack Setup for TypeScript"
+    },
+    {
+      "id": 158,
+      "categoryId": 4,
+      "link": "https://dericgw.github.io/react-tiny-fab",
+      "desc": "FAB Library"
+    },
+    {
+      "id": 159,
+      "categoryId": 6,
+      "link": "https://daveceddia.com/redux-mapdispatchtoprops-object-form/",
+      "desc": "Redux Tips"
+    },
+    {
+      "id": 160,
+      "categoryId": 3,
+      "link": "https://hankchizljaw.io/wrote/introducing-the-button-element/",
+      "desc": "Button Styling"
+    },
+    {
+      "id": 161,
+      "categoryId": 4,
+      "link": "https://egghead.io/lessons/react-add-svgs-as-react-components-with-create-react-app-2-0",
+      "desc": "SVG as Component"
+    },
+    {
+      "id": 162,
+      "categoryId": 3,
+      "link": "https://codepen.io/chriscoyier/details/VGOWeo",
+      "desc": "Rising Button Styling"
+    },
+    {
+      "id": 163,
+      "categoryId": 1,
+      "link": "https://www.sitepoint.com/creating-css-grid-layouts/",
+      "desc": "Creating Layouts"
+    },
+    {
+      "id": 164,
+      "categoryId": 3,
+      "link": "https://modalzmodalzmodalz.com",
+      "desc": "Modals - Do's & Dont's"
+    },
+    {
+      "id": 165,
+      "categoryId": 3,
+      "link": "https://codepen.io/himalayasingh/pen/EdVzNL",
+      "desc": "Toggle Buttons"
+    },
+    {
+      "id": 166,
+      "categoryId": 6,
+      "link": "https://frontarm.com/articles/react-context-state-management/",
+      "desc": "React Context API"
+    },
+    {
+      "id": 167,
+      "categoryId": 4,
+      "link": "https://frontarm.com/articles/react-anti-patterns-conditional-rendering/",
+      "desc": "Conditional Rendering Tips"
+    },
+    {
+      "id": 168,
+      "categoryId": 4,
+      "link": "https://www.twilio.com/blog/audio-visualisation-web-audio-api--react",
+      "desc": "Web Audio API"
+    },
+    {
+      "id": 169,
+      "categoryId": 3,
+      "link": "https://callmenick.com/dev/floated-labels-with-placeholder-shown/",
+      "desc": "Floating Label"
+    },
+    {
+      "id": 170,
+      "categoryId": 13,
+      "link": "https://cogearjs.org/",
+      "desc": "Static Site Generator"
     }
   ]
 }
