@@ -2,7 +2,6 @@ import { IFetchError } from "./interfaces";
 
 export class FetchError implements IFetchError {
   private readonly _hasErrors: boolean;
-  private readonly _errorMessage: string;
   private readonly _error: Error;
 
   public static create(hasErrors: boolean, error: Error): IFetchError {
@@ -12,7 +11,6 @@ export class FetchError implements IFetchError {
   private constructor(hasErrors: boolean, error: Error) {
     this._hasErrors = hasErrors;
     this._error = error;
-    this._errorMessage = error.message;
   }
 
   get hasErrors(): boolean {
@@ -20,7 +18,7 @@ export class FetchError implements IFetchError {
   }
 
   get errorMessage(): string {
-    return this._errorMessage;
+    return this._error.message;
   }
 
   get error(): Error {

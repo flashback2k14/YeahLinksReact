@@ -94,10 +94,7 @@ class App extends React.Component<IAppProps, IAppState> {
     return isLoading ? (
       <Loading />
     ) : fetchError.hasErrors ? (
-      <ErrorLog
-        errorMessage={fetchError.errorMessage}
-        error={fetchError.error}
-      />
+      <ErrorLog fetchError={fetchError} />
     ) : (
       <React.Fragment>
         <Search

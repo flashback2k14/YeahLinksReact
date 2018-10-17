@@ -1,14 +1,16 @@
 import * as React from "react";
+import { IFetchError } from "./data";
 import { ErrorLogContainer, ErrorLogMessage, ErrorLogCode } from "../atoms";
 
 interface IErrorLogProps {
-  errorMessage: String;
-  error: Error;
+  fetchError: IFetchError;
 }
 
 export const ErrorLog = (props: IErrorLogProps) => (
   <ErrorLogContainer>
-    <ErrorLogMessage>Error: {props.errorMessage}</ErrorLogMessage>
-    <ErrorLogCode>{JSON.stringify(props.error, null, 2)}</ErrorLogCode>
+    <ErrorLogMessage>Error: {props.fetchError.errorMessage}</ErrorLogMessage>
+    <ErrorLogCode>
+      {JSON.stringify(props.fetchError.error, null, 2)}
+    </ErrorLogCode>
   </ErrorLogContainer>
 );
