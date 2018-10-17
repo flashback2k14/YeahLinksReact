@@ -14,3 +14,15 @@ export interface IData {
   categories: ICategory[];
   links: ILink[];
 }
+
+export interface IFetchResult {
+  initialData: IData;
+  data: IData;
+  setData(value: IData): IFetchResult;
+}
+
+export interface IFetchError {
+  hasErrors: boolean;
+  errorMessage: string;
+  error: Error;
+}
