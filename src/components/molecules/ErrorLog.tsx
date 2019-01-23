@@ -1,5 +1,5 @@
 import * as React from "react";
-import { IFetchError } from "./data";
+import { IFetchError } from "../../data";
 import { ErrorLogContainer, ErrorLogMessage, ErrorLogCode } from "../atoms";
 
 interface IErrorLogProps {

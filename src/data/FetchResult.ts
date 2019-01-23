@@ -7,6 +7,11 @@ export class FetchResult implements IFetchResult {
   public static create(initialData: IData): IFetchResult {
     return new FetchResult(initialData);
   }
+  
+  public setData(value: IData): FetchResult {
+    this._data = value;
+    return this;
+  }
 
   private constructor(initialData: IData) {
     this._initialData = initialData;
@@ -21,8 +26,4 @@ export class FetchResult implements IFetchResult {
     return this._data;
   }
 
-  public setData(value: IData): FetchResult {
-    this._data = value;
-    return this;
-  }
 }
