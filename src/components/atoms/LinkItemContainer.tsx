@@ -1,13 +1,12 @@
-import styled from "react-emotion";
+import styled from "@emotion/styled";
 
 interface ILinkItemContainerProps {
   isHidden: boolean;
 }
 
-export const LinkItemContainer = styled("li")`
+export const LinkItemContainer = styled.li<ILinkItemContainerProps>`
   line-height: 1.3;
   padding: 4px 8px;
   font-weight: 400;
-  display: ${(props: ILinkItemContainerProps) =>
-    props.isHidden ? "none" : "list-item"};
+  display: ${props => (props.isHidden ? "none" : "list-item")};
 `;

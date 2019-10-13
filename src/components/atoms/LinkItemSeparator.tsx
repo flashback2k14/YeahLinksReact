@@ -1,4 +1,4 @@
-import styled from "react-emotion";
+import styled from "@emotion/styled";
 
 export const LinkItemSeparator = styled("hr")`
   margin: 0 8px 4px 0;

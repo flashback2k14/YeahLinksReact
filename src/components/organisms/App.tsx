@@ -1,5 +1,4 @@
 import * as React from "react";
-import { injectGlobal } from "emotion";
 import {
   IData,
   ICategory,
@@ -12,50 +11,7 @@ import {
 } from "../../data";
 import { CategoryList, CategoryItem, LinkList } from "../atoms";
 import { ErrorLog, LinkItem, Loading, Search } from "../molecules";
-
-/* tslint:disable */
-injectGlobal`
-  @import url("https://rsms.me/inter/inter-ui.css");
-
-  * {
-    font-family: "Inter UI", sans-serif;
-  }
-
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    color: #00ffa2;
-    background: #004466;
-  }
-
-  /* theming scrollbars */
-  /* https://css-tricks.com/custom-scrollbars-in-webkit/ */
-  ::-webkit-scrollbar {
-    height: 4px;
-    width: 6px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    background: #004466;
-    cursor: pointer;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    background: #00ffa2;
-  }
-
-  ::-webkit-scrollbar-thumb:window-inactive {
-    background: transparent;
-  }
-`;
-/* tslint:enable */
+import { GlobalStyles } from "./GlobalStyles";
 
 interface IAppProps {
   dataSource: string;
@@ -92,11 +48,18 @@ class App extends React.Component<IAppProps, IAppState> {
     } = this.state;
 
     return isLoading ? (
-      <Loading />
+      <>
+        <GlobalStyles />
+        <Loading />
+      </>
     ) : fetchError.hasErrors ? (
-      <ErrorLog fetchError={fetchError} />
+      <>
+        <GlobalStyles />
+        <ErrorLog fetchError={fetchError} />
+      </>
     ) : (
       <React.Fragment>
+        <GlobalStyles />
         <Search
           onInputChange={this._filterData}
           onClearFilter={this._clearFilterData}

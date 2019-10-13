@@ -1,11 +1,11 @@
-import styled from "react-emotion";
+import styled from "@emotion/styled";
 
 interface ISearchInputProps {
   isVisible: boolean;
 }
 
-export const SearchInput = styled("input")`
-  display: ${(props: ISearchInputProps) => (props.isVisible ? "flex" : "none")};
+export const SearchInput = styled.input<ISearchInputProps>`
+  display: ${props => (props.isVisible ? "flex" : "none")};
   flex: 1 0 auto;
 
   margin: 2px 12px;

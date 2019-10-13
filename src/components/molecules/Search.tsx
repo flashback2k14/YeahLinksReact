@@ -18,7 +18,7 @@ interface ISearchState {
 }
 
 export class Search extends React.Component<ISearchProps, ISearchState> {
-  private _refTxtInput: HTMLInputElement;
+  private _refTxtInput: HTMLInputElement | undefined;
 
   constructor(props: ISearchProps) {
     super(props);
@@ -34,7 +34,7 @@ export class Search extends React.Component<ISearchProps, ISearchState> {
           Search
         </SearchInputLabel>
         <SearchInput
-          innerRef={(ref: HTMLInputElement) => (this._refTxtInput = ref)}
+          ref={(ref: HTMLInputElement) => (this._refTxtInput = ref)}
           isVisible={this.state.isInputVisible}
           onChange={this.props.onInputChange}
           onKeyDown={this._handleKeydown}
@@ -56,11 +56,13 @@ export class Search extends React.Component<ISearchProps, ISearchState> {
         };
       },
       () => {
-        if (this.state.isInputVisible) {
+        if (this._refTxtInput && this.state.isInputVisible) {
           this._refTxtInput.focus();
         } else {
-          this._refTxtInput.value = "";
-          this.props.onClearFilter();
+          if (this._refTxtInput) {
+            this._refTxtInput.value = "";
+            this.props.onClearFilter();
+          }
         }
       }
     );
