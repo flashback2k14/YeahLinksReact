@@ -1,11 +1,5 @@
   
 {
   "version": 2,
-  "name": "yeah-links",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/static-build"
-    }
-  ]
+  "name": "yeah-links"
 }
