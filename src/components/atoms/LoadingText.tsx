@@ -1,4 +1,4 @@
-import styled from "react-emotion";
+import styled from "@emotion/styled";
 
 export const LoadingText = styled("div")`
   margin-bottom: 4px;

@@ -1,17 +1,11 @@
+  
 {
+  "version": 2,
   "name": "yeah-links",
-  "alias": "yeah-links",
-  "static": {
-    "headers": [
-      {
-        "source": "**/*.@(png|ico|xml|svg)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=172800"
-          }
-        ]
-      }
-    ]
-  }
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ]
 }
