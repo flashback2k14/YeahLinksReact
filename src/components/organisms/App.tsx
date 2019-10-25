@@ -1,17 +1,8 @@
-import * as React from "react";
-import {
-  IData,
-  ICategory,
-  ILink,
-  IFetchError,
-  IFetchResult,
-  FetchResult,
-  FetchError,
-  Helper
-} from "../../data";
-import { CategoryList, CategoryItem, LinkList } from "../atoms";
-import { ErrorLog, LinkItem, Loading, Search } from "../molecules";
-import { GlobalStyles } from "./GlobalStyles";
+import * as React from 'react';
+import { IData, ICategory, ILink, IFetchError, IFetchResult, FetchResult, FetchError, Helper } from '../../data';
+import { CategoryList, CategoryItem, LinkList } from '../atoms';
+import { ErrorLog, LinkItem, Loading, Search } from '../molecules';
+import { GlobalStyles } from './GlobalStyles';
 
 interface IAppProps {
   dataSource: string;
@@ -40,12 +31,7 @@ class App extends React.Component<IAppProps, IAppState> {
   }
 
   render() {
-    const {
-      isLoading,
-      fetchError,
-      fetchResult,
-      showChildListForCategoryIds
-    } = this.state;
+    const { isLoading, fetchError, fetchResult, showChildListForCategoryIds } = this.state;
 
     return isLoading ? (
       <>
@@ -58,28 +44,20 @@ class App extends React.Component<IAppProps, IAppState> {
         <ErrorLog fetchError={fetchError} />
       </>
     ) : (
-      <React.Fragment>
+      <>
         <GlobalStyles />
-        <Search
-          onInputChange={this._filterData}
-          onClearFilter={this._clearFilterData}
-        />
+        <Search onInputChange={this._filterData} onClearFilter={this._clearFilterData} />
         <CategoryList>
           {fetchResult.data.categories.map((category: ICategory) => (
             <React.Fragment key={category.id}>
-              <CategoryItem onClick={() => this._toggleChildList(category)}>
-                {category.name}
-              </CategoryItem>
+              <CategoryItem onClick={() => this._toggleChildList(category)}>{category.name}</CategoryItem>
               <li>
                 <LinkList>
                   {this._getLinkList(category.id).map((link: ILink) => (
                     <LinkItem
                       key={link.id}
                       link={link}
-                      isHidden={Helper.contains(
-                        showChildListForCategoryIds,
-                        link.categoryId
-                      )}
+                      isHidden={Helper.contains(showChildListForCategoryIds, link.categoryId)}
                     />
                   ))}
                 </LinkList>
@@ -87,7 +65,7 @@ class App extends React.Component<IAppProps, IAppState> {
             </React.Fragment>
           ))}
         </CategoryList>
-      </React.Fragment>
+      </>
     );
   }
 
@@ -98,6 +76,9 @@ class App extends React.Component<IAppProps, IAppState> {
         isLoading: false,
         fetchResult: FetchResult.create(result)
       });
+
+      const t = this.__test(result);
+      console.log(t);
     } catch (error) {
       this.setState({
         isLoading: false,
@@ -106,29 +87,39 @@ class App extends React.Component<IAppProps, IAppState> {
     }
   };
 
+  private __test({ categories, links }: IData): object {
+    const result: any = {};
+    result[0] = {
+      id: 0,
+      name: 'ROOT',
+      isRoot: true,
+      children: []
+    };
+
+    for (let category of categories) {
+      const obj = { ...category } as any;
+      obj.children = links.filter((link: ILink) => link.categoryId === category.id);
+      result[0].children.push(obj);
+    }
+
+    return result;
+  }
+
   private _filterData = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const { categories, links } = this.state.fetchResult.initialData;
 
     const filteredLinkLinks = links.filter(
-      (link: ILink) =>
-        -1 !== link.link.toUpperCase().search(e.target.value.toUpperCase())
+      (link: ILink) => -1 !== link.link.toUpperCase().search(e.target.value.toUpperCase())
     );
 
     const filteredLinkDescs = links.filter(
-      (link: ILink) =>
-        -1 !== link.desc.toUpperCase().search(e.target.value.toUpperCase())
+      (link: ILink) => -1 !== link.desc.toUpperCase().search(e.target.value.toUpperCase())
     );
 
-    const filteredLinks = Array.from(
-      new Set([...filteredLinkLinks, ...filteredLinkDescs])
-    );
+    const filteredLinks = Array.from(new Set([...filteredLinkLinks, ...filteredLinkDescs]));
 
     const filteredCategories = categories.filter(
-      (category: ICategory) =>
-        -1 !==
-        filteredLinks.findIndex(
-          (link: ILink) => link.categoryId === category.id
-        )
+      (category: ICategory) => -1 !== filteredLinks.findIndex((link: ILink) => link.categoryId === category.id)
     );
 
     this.setState({
@@ -137,9 +128,7 @@ class App extends React.Component<IAppProps, IAppState> {
         links: filteredLinks
       }),
       showChildListForCategoryIds:
-        e.target.value === ""
-          ? []
-          : filteredCategories.map((category: ICategory) => category.id)
+        e.target.value === '' ? [] : filteredCategories.map((category: ICategory) => category.id)
     });
   };
 
@@ -165,9 +154,7 @@ class App extends React.Component<IAppProps, IAppState> {
   };
 
   private _getLinkList = (categoryId: number): ILink[] =>
-    this.state.fetchResult.data.links
-      .filter((link: ILink) => link.categoryId === categoryId)
-      .sort(Helper.sortLinks);
+    this.state.fetchResult.data.links.filter((link: ILink) => link.categoryId === categoryId).sort(Helper.sortLinks);
 }
 
 export default App;

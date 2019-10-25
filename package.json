@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "now-build": "npm run build",
-    "deploy": "npm run build && npx now --prod ."
+    "deploy": "npm run build && npx now --prod . && rm -rf build/"
   },
   "eslintConfig": {
     "extends": "react-app"
