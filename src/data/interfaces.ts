@@ -1,13 +1,20 @@
-export interface ICategory {
-  id: number;
-  name: string;
-}
-
 export interface ILink {
   id: number;
   categoryId: number;
   link: string;
   desc: string;
+}
+
+export interface ICategory {
+  id: number;
+  name: string;
+  children: ILink[];
+}
+
+export interface ICategoryTree {
+  id: number;
+  name: string;
+  children: ICategory[];
 }
 
 export interface IData {
@@ -16,9 +23,9 @@ export interface IData {
 }
 
 export interface IFetchResult {
-  initialData: IData;
-  data: IData;
-  setData(value: IData): IFetchResult;
+  initialData: ICategoryTree;
+  data: ICategoryTree;
+  setData(value: ICategoryTree): IFetchResult;
 }
 
 export interface IFetchError {

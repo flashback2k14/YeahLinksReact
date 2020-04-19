@@ -1,29 +1,47 @@
-import { IData, IFetchResult } from "./interfaces";
+import { IData, IFetchResult, ICategoryTree, ICategory, ILink } from './interfaces';
 
 export class FetchResult implements IFetchResult {
-  private readonly _initialData: IData;
-  private _data: IData;
+  private readonly _initialData: ICategoryTree;
+  private _data: ICategoryTree;
 
   public static create(initialData: IData): IFetchResult {
     return new FetchResult(initialData);
   }
-  
-  public setData(value: IData): FetchResult {
+
+  public setData(value: ICategoryTree): FetchResult {
     this._data = value;
     return this;
   }
 
   private constructor(initialData: IData) {
-    this._initialData = initialData;
-    this._data = initialData;
+    const tree = this._parseData(initialData);
+    this._initialData = tree;
+    this._data = tree;
   }
 
-  get initialData(): IData {
+  private _parseData({ categories, links }: IData): ICategoryTree {
+    const result: ICategoryTree = {
+      id: 0,
+      name: 'ROOT',
+      children: []
+    };
+
+    if (categories) {
+      for (const category of categories) {
+        const obj = { ...category } as ICategory;
+        obj.children = links.filter((link: ILink) => link.categoryId === category.id);
+        result.children.push(obj);
+      }
+    }
+
+    return result;
+  }
+
+  get initialData(): ICategoryTree {
     return this._initialData;
   }
 
-  get data(): IData {
+  get data(): ICategoryTree {
     return this._data;
   }
-
 }
